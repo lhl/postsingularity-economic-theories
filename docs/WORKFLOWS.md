@@ -118,12 +118,16 @@ ln -s ../../reference/primary/[author]-[year]-[shorttitle].pdf .
 
 5. **Identify chains**: If claims form logical chain A→B→C, document in analysis
 
-6. **Remove from inbox**:
+6. **Update Current Research list (if applicable)**:
+   - If this analysis represents a *new* topic or materially advances an existing one, add it to `README.md` under **Current Research → Analyses**
+   - If claim totals/domains changed, update the counts in `README.md` under **Claims Registered**
+
+7. **Remove from inbox**:
    ```bash
    rm inbox/to-analyze/[filename]
    ```
 
-7. **Commit all together**:
+8. **Commit all together**:
    ```bash
    git add analysis/sources/[source-id]-analysis.md
    git add claims/registry.yaml
