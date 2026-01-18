@@ -35,6 +35,8 @@ When making significant framework changes, increment version and document:
 - Use conventional commit style when appropriate (feat:, fix:, docs:, refactor:)
 - Prefer `git mv` for renames/moves to preserve history
 - Default agent behavior: after making substantive changes, run validation, commit, and push unless explicitly told not to
+  - **“Substantive changes” includes** edits/additions to research outputs (`analysis/`, `claims/`, `tracking/`, `scenarios/`, `reference/`) and framework/tooling (`AGENTS.md`, `docs/`, `frameworks/`, `scripts/`)
+  - If you want changes left uncommitted/unpushed for review, say so explicitly (e.g., “don’t commit/push yet”)
 - Housekeeping before pushing:
   - Run `python scripts/validate.py` and ensure it reports `OK`
   - Ensure claim/source backlinks are updated in the same commit (atomicity)
