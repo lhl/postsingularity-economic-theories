@@ -20,12 +20,12 @@ The framework is itself under development—we refine it as we encounter new typ
 | Document | Status | Summary |
 |----------|--------|---------|
 | [Neofeudalism Discourse Synthesis](analysis/syntheses/neofeudalism-discourse-synthesis.md) | `[DRAFT]` | Synthesis of Jan 2026 Twitter discourse on post-labor economics, permanent underclass thesis, and counter-arguments |
-| [Greenland "Endgame" Post Analysis](analysis/sources/teortaxes-2026-greenland-endgame.md) | `[DRAFT]` | 3-stage analysis of a Greenland/resource-extraction + "light cone" endgame narrative; extracts GOV/RESOURCE/TRANS claims |
+| [Greenland "Endgame" Post Analysis](analysis/sources/teortaxes-2026-greenland-endgame.md) | `[REVIEWED]` | 3-stage analysis with fact-check/rhetoric/tension checks; extracts GOV/RESOURCE/TRANS/LABOR claims |
 | [Framework Efficacy Meta-Analysis](analysis/meta/framework-efficacy-greenland-test.md) | `[REVIEWED]` | Compares framework-guided vs raw analysis; identifies framework gaps (fact-checking, rhetoric, internal tensions); proposes template improvements |
 
 ### Claims Registered
 
-**43 claims** across 8 domains, with **3 argument chains** mapped:
+**44 claims** across 8 domains, with **3 argument chains** mapped:
 
 | Chain | Thesis | Confidence |
 |-------|--------|------------|

@@ -114,28 +114,6 @@ sources:
     topics: ["post-labor", "automation", "permanent-underclass", "timeline"]
     domains: ["LABOR", "DIST", "GOV", "TECH"]
 
-  teortaxes-2026-greenland-endgame:
-    type: "SOCIAL"
-    title: "Greenland/resource extraction + 'light cone' endgame post"
-    author: ["@teortaxesTex"]
-    year: 2026
-    url: "https://x.com/teortaxesTex/status/2012127205728440495"
-    accessed: "2026-01-18"
-    reliability: 0.3
-    bias_notes: "Highly narrativized geopolitical speculation; many claims are rhetorical/unfalsifiable; contains slurs/profanity"
-    claims_extracted:
-      - "RESOURCE-2026-003"
-      - "GOV-2026-012"
-      - "GOV-2026-013"
-      - "GOV-2026-014"
-      - "GOV-2026-015"
-      - "TRANS-2026-001"
-      - "TRANS-2026-002"
-    analysis_file: "analysis/sources/teortaxes-2026-greenland-endgame.md"
-    topics: ["geopolitics", "resources", "greenland", "nato", "automation", "spacefaring", "longtermism"]
-    domains: ["GOV", "RESOURCE", "TRANS"]
-    status: "analyzed"
-
   xenoimpulse-2026-thread:
     type: "SOCIAL"
     title: "Genocide > UBI nihilistic thread"
@@ -425,9 +403,10 @@ sources:
       - "GOV-2026-014"
       - "GOV-2026-015"
       - "RESOURCE-2026-003"
+      - "LABOR-2026-004"
     analysis_file: "analysis/sources/teortaxes-2026-greenland-endgame.md"
-    topics: ["greenland", "resource-extraction", "longtermism", "light-cone", "geopolitics", "europe"]
-    domains: ["GOV", "TRANS", "RESOURCE"]
+    topics: ["greenland", "resource-extraction", "longtermism", "light-cone", "geopolitics", "europe", "automation"]
+    domains: ["GOV", "TRANS", "RESOURCE", "LABOR"]
     status: "analyzed"
 
   gpt-2026-01-19-greenland-endgame:
@@ -485,6 +464,6 @@ sources:
     status: "analyzed"
 
 # Statistics
-# Total sources: 27
-# By type: CONVO: 5, BLOG: 2, SOCIAL: 4, REPORT: 6, PAPER: 3, ARTICLE: 3, BOOK: 1, KNOWLEDGE: 3
+# Total sources: 26
+# By type: CONVO: 5, BLOG: 2, SOCIAL: 3, REPORT: 6, PAPER: 3, ARTICLE: 3, BOOK: 1, KNOWLEDGE: 3
 # Last updated: 2026-01-19

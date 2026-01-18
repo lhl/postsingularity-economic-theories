@@ -13,13 +13,13 @@ See [AGENTS.md](../AGENTS.md#prediction-tracking-rubric) for status symbols and 
 | `[P+]` Confirmed | 0 | Prediction occurred as specified |
 | `[P~]` Partially Confirmed | 0 | Core thesis correct, details differ |
 | `[P→]` On Track | 1 | Intermediate indicators align |
-| `[P?]` Uncertain | 2 | Insufficient data |
+| `[P?]` Uncertain | 3 | Insufficient data |
 | `[P←]` Off Track | 0 | Intermediate indicators diverge |
 | `[P!]` Partially Refuted | 0 | Core thesis problematic |
 | `[P-]` Refuted | 0 | Prediction clearly failed |
 | `[P∅]` Unfalsifiable | 0 | No possible evidence could refute |
 
-**Total Predictions Tracked**: 3
+**Total Predictions Tracked**: 4
 
 ---
 
@@ -60,6 +60,21 @@ See [AGENTS.md](../AGENTS.md#prediction-tracking-rubric) for status symbols and 
 - **Related Claims**: [TECH-2026-003, DIST-2026-003]
 - **Evidence Updates**:
   - 2026-01-18: Initial registration. Timeline speculative; "full" undefined. Acemoglu-Restrepo task recomposition framework suggests this may overstate displacement.
+
+#### Full Automation Within One Generation
+- **Claim ID**: LABOR-2026-004
+- **Source**: teortaxes-2026-greenland-endgame
+- **Date Made**: 2026-01-16
+- **Target Date**: ~2050 (≤ one generation)
+- **Claim**: Full human labor automation occurs within at most a single generation (possibly within a few years)
+- **Falsification Criteria**: >20% of economic output still requires human labor by 2050; “full automation” remains unachieved in core sectors
+- **Verification Criteria**: <5% of economic output requires human labor by 2050; most industries fully automated
+- **Status**: `[P?]`
+- **Confidence**: 0.15
+- **Last Evaluated**: 2026-01-19
+- **Related Claims**: [LABOR-2026-002, LABOR-2026-003]
+- **Evidence Updates**:
+  - 2026-01-19: Initial registration. Rhetorically emphatic, broad timeline, and weakly supported; treated as low-confidence.
 
 ---
 
@@ -108,6 +123,7 @@ Note: GOV-2026-002 ("Elites will choose genocide over UBI") is classified as `[S
 |-----------|-------------|----------------|
 | epoch-2024-training-costs | 1 | 0.65 |
 | teortaxes-2026-thread | 2 | 0.325 |
+| teortaxes-2026-greenland-endgame | 1 | 0.15 |
 
 ---
 
@@ -118,6 +134,7 @@ Note: GOV-2026-002 ("Elites will choose genocide over UBI") is classified as `[S
 | 2026-01-18 | TECH-2026-002 | - | `[P→]` | Initial registration |
 | 2026-01-18 | LABOR-2026-002 | - | `[P?]` | Initial registration |
 | 2026-01-18 | DIST-2026-003 | - | `[P?]` | Initial registration |
+| 2026-01-19 | LABOR-2026-004 | - | `[P?]` | Initial registration |
 
 ---
 
@@ -126,10 +143,10 @@ Note: GOV-2026-002 ("Elites will choose genocide over UBI") is classified as `[S
 Events that should trigger re-evaluation of predictions:
 
 - [ ] Major lab announces training run budget (for TECH-2026-002)
-- [ ] Significant automation deployment news (for LABOR-2026-002)
+- [ ] Significant automation deployment news (for LABOR-2026-002, LABOR-2026-004)
 - [ ] Major UBI/redistribution policy announcements (for DIST-2026-003)
 - [ ] Quarterly review: 2026-Q2
 
 ---
 
-*Last Updated: 2026-01-18*
+*Last Updated: 2026-01-19*

@@ -4,7 +4,7 @@
 
 # Counter tracking (for generating sequential IDs)
 counters:
-  LABOR: 3
+  LABOR: 4
   VALUE: 2
   DIST: 6
   GOV: 15
@@ -195,6 +195,24 @@ claims:
     version: 1
     last_updated: "2026-01-18"
     notes: "Contested: ignores task recomposition and human-AI complementarity; 'economically irrelevant' often undefined"
+
+  LABOR-2026-004:
+    text: "Full human labor automation occurs within at most a single generation (possibly within a few years)"
+    type: "[P]"
+    domain: "LABOR"
+    evidence_level: "E6"
+    confidence: 0.15
+    source_ids: ["teortaxes-2026-greenland-endgame"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+    notes: "Rhetorically emphatic; timelines undefined; treated as low-confidence prediction"
 
   # === VALUE Domain ===
 
@@ -811,6 +829,6 @@ chains:
     weakest_link: "DIST-2026-006 (inference centralization vs diffusion)"
 
 # Statistics
-# Total claims: 43
+# Total claims: 44
 # Total chains: 3
 # Last updated: 2026-01-19
