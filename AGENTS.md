@@ -105,16 +105,19 @@ Not all analysis needs full rigor. Tag analyses with:
 
 ## Evidence Hierarchy
 
-Use this hierarchy when evaluating claims:
+Use this hierarchy to rate **strength of evidential support** for claims. E-levels measure how well-supported a claim is, not the type of evidence.
 
-| Level | Category | Description | Weight |
+| Level | Strength | Description | Weight |
 |-------|----------|-------------|--------|
-| E1 | Empirical-Strong | Replicated studies, historical data, verified measurements | 0.9-1.0 |
-| E2 | Empirical-Moderate | Single studies, case studies, natural experiments | 0.6-0.8 |
-| E3 | Theoretical-Grounded | Logical derivation from well-established principles | 0.5-0.7 |
-| E4 | Theoretical-Speculative | Plausible reasoning, extrapolation from trends | 0.3-0.5 |
-| E5 | Expert Opinion | Credentialed speculation, informed forecasts | 0.2-0.4 |
-| E6 | Pure Speculation | Unfounded claims, sci-fi scenarios, wishful thinking | 0.0-0.2 |
+| E1 | Strong Empirical | Replicated studies, historical data, verified measurements | 0.9-1.0 |
+| E2 | Moderate Empirical | Single studies, case studies, natural experiments | 0.6-0.8 |
+| E3 | Strong Theoretical | Logical derivation from well-established principles | 0.5-0.7 |
+| E4 | Weak Theoretical | Plausible reasoning, extrapolation from trends | 0.3-0.5 |
+| E5 | Opinion/Forecast | Credentialed speculation, informed forecasts | 0.2-0.4 |
+| E6 | Unsupported | Unfounded claims, assertions without evidence | 0.0-0.2 |
+
+**Evidence Types** (for context, use as annotation when helpful):
+- Primary document, Secondary reporting, Quantitative dataset, Expert commentary, Analyst inference, Source assertion
 
 ---
 
@@ -555,8 +558,9 @@ When analyzing a new document/source:
 - **URL/DOI**:
 - **Reliability**: [0.0-1.0]
 - **Rigor Level**: [SPITBALL | DRAFT | REVIEWED | CANONICAL]
+- **Media Artifacts**: [Y/N] — If Y: [describe what they depict, evidentiary vs decorative, verified status]
 
-> **Evidence Levels**: E1=Replicated empirical | E2=Single study/case | E3=Grounded theory | E4=Speculative theory | E5=Expert opinion | E6=Pure speculation
+> **Evidence Strength (E-level)**: E1=Strong empirical (replicated) | E2=Moderate empirical (single study) | E3=Strong theoretical (grounded) | E4=Weak theoretical (speculative) | E5=Opinion/forecast | E6=Unsupported assertion
 
 ## Stage 1: Descriptive Summary
 
@@ -591,9 +595,22 @@ When analyzing a new document/source:
 [Does the argument follow logically? Any contradictions?]
 
 ### Key Factual Claims Verified
-| Claim (paraphrased) | Source Says | Actual | External Source | Status |
-|---------------------|-------------|--------|-----------------|--------|
-| [e.g., "China makes 50% of stuff"] | [assertion] | [verified] | [URL/ref] | ✓ / ✗ / ? |
+
+> **Requirement**: Must include ≥1 **crux claim** (central to thesis), not just peripheral numerics.
+
+| Claim (paraphrased) | Crux? | Source Says | Actual | External Source | Status |
+|---------------------|-------|-------------|--------|-----------------|--------|
+| [e.g., "China makes 50% of stuff"] | N | [assertion] | [verified] | [URL/ref] | ✓ / ✗ / ? |
+| [e.g., "Elite consensus on X"] | **Y** | [assertion] | [verified or ?] | [URL/ref] | ✓ / ✗ / ? |
+
+### Disconfirming Evidence Search
+
+> For top 2-3 claims, actively search for counterevidence or alternative explanations (even 5 min changes behavior).
+
+| Claim | Counterevidence Found | Alternative Explanation | Search Notes |
+|-------|----------------------|------------------------|--------------|
+| [top claim 1] | [what contradicts it, or "none found"] | [other way to explain] | [what you searched] |
+| [top claim 2] | [what contradicts it, or "none found"] | [other way to explain] | [what you searched] |
 
 ### Internal Tensions / Self-Contradictions
 | Tension | Parts in Conflict | Implication |

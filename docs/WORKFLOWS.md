@@ -98,9 +98,12 @@ ln -s ../../reference/primary/[author]-[year]-[shorttitle].pdf .
    ```
 
 2. **Use Source Analysis Template** (from AGENTS.md):
-   - Stage 1: Descriptive Summary (include Verified? and Falsifiable By columns)
+   - Stage 1: Descriptive Summary
+     - Include Verified? and Falsifiable By columns in Key Claims table
+     - Note Media Artifacts (Y/N) in metadata
    - Stage 2: Evaluation (must include):
-     - Key Factual Claims Verified (with external sources)
+     - Key Factual Claims Verified (≥1 crux claim, not just peripheral facts)
+     - Disconfirming Evidence Search (top 2-3 claims)
      - Internal Tensions / Self-Contradictions
      - Persuasion Techniques
    - Stage 3: Dialectical Analysis
