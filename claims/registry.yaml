@@ -12,7 +12,7 @@ counters:
   SOCIAL: 0
   RESOURCE: 3
   TRANS: 2
-  META: 5
+  META: 8
 
 # Claims index
 claims:
@@ -717,17 +717,71 @@ claims:
     domain: "META"
     evidence_level: "E4"
     confidence: 0.65
-    source_ids: ["claude-2026-01-19-framework-efficacy"]
+    source_ids: ["claude-2026-01-19-framework-efficacy", "gpt-2026-01-19-framework-comparison"]
     first_extracted: "2026-01-19"
     extracted_by: "claude"
     supports: []
     contradicts: []
     depends_on: ["META-2026-001", "META-2026-003", "META-2026-004"]
+    modified_by: ["META-2026-006"]
+    part_of_chain: ""
+    version: 2
+    last_updated: "2026-01-19"
+    notes: "Framework adds tractability; raw adds depth. Two-pass workflow proposed. Confirmed by GPT self-comparison."
+
+  META-2026-006:
+    text: "Framework operates as 'mapmaker' (models what's being said + link strength); raw analysis operates as 'referee' (adjudicates truth/falsity + how rhetoric works)"
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E3"
+    confidence: 0.80
+    source_ids: ["gpt-2026-01-19-framework-comparison"]
+    first_extracted: "2026-01-19"
+    extracted_by: "claude"
+    supports: ["META-2026-005"]
+    contradicts: []
+    depends_on: []
     modified_by: []
     part_of_chain: ""
     version: 1
     last_updated: "2026-01-19"
-    notes: "Framework adds tractability; raw adds depth. Two-pass workflow proposed."
+    notes: "GPT's characterization of the two approaches; useful framing for when to use each"
+
+  META-2026-007:
+    text: "Framework misses internal tension detection: where premise A undermines motivation B within the same source"
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    confidence: 0.75
+    source_ids: ["gpt-2026-01-19-framework-comparison"]
+    first_extracted: "2026-01-19"
+    extracted_by: "claude"
+    supports: ["META-2026-003"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+    notes: "Example: 'endgame tech' premise undermines 'seize Greenland' motivation; framework didn't catch this"
+
+  META-2026-008:
+    text: "Merged optimal artifact would add 'baseline/evidence anchors' column per claim with external citations and disconfirmation criteria"
+    type: "[H]"
+    domain: "META"
+    evidence_level: "E4"
+    confidence: 0.70
+    source_ids: ["gpt-2026-01-19-framework-comparison"]
+    first_extracted: "2026-01-19"
+    extracted_by: "claude"
+    supports: ["META-2026-005"]
+    contradicts: []
+    depends_on: ["META-2026-003", "META-2026-006"]
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+    notes: "Specific template improvement proposed by GPT; would add empirical anchoring to claim tables"
 
 # Argument chains index
 chains:
@@ -757,6 +811,6 @@ chains:
     weakest_link: "DIST-2026-006 (inference centralization vs diffusion)"
 
 # Statistics
-# Total claims: 40
+# Total claims: 43
 # Total chains: 3
 # Last updated: 2026-01-19

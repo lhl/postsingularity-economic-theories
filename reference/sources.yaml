@@ -465,7 +465,26 @@ sources:
     domains: ["META"]
     status: "analyzed"
 
+  gpt-2026-01-19-framework-comparison:
+    type: "CONVO"
+    title: "ChatGPT's Self-Comparison: Raw vs Framework Analysis"
+    author: ["lhl", "GPT-5.2-Pro"]
+    year: 2026
+    url: "https://chatgpt.com/c/696d1df5-91a0-8324-9137-9644a9f2e779"
+    accessed: "2026-01-19"
+    reliability: 0.75
+    bias_notes: "ChatGPT comparing its own raw analysis to framework-guided analysis; provides external perspective on framework gaps"
+    claims_extracted:
+      - "META-2026-005"  # Updated with additional source
+      - "META-2026-006"
+      - "META-2026-007"
+      - "META-2026-008"
+    analysis_file: "analysis/meta/framework-efficacy-greenland-test.md"
+    topics: ["meta-analysis", "framework-evaluation", "methodology", "self-comparison"]
+    domains: ["META"]
+    status: "analyzed"
+
 # Statistics
-# Total sources: 26
-# By type: CONVO: 4, BLOG: 2, SOCIAL: 4, REPORT: 6, PAPER: 3, ARTICLE: 3, BOOK: 1, KNOWLEDGE: 3
+# Total sources: 27
+# By type: CONVO: 5, BLOG: 2, SOCIAL: 4, REPORT: 6, PAPER: 3, ARTICLE: 3, BOOK: 1, KNOWLEDGE: 3
 # Last updated: 2026-01-19

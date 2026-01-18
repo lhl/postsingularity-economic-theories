@@ -140,6 +140,63 @@ These claims are about the *framework itself*, filed under META domain:
 
 ---
 
+## External Validation: ChatGPT Self-Comparison
+
+After our initial comparison, we asked ChatGPT (the raw analyzer) to compare its own output against the framework output. This provides external validation of our meta-analysis.
+
+**Source**: [gpt-2026-01-19-framework-comparison](../../reference/transcripts/gpt-2026-01-19-framework-comparison.md)
+
+### Key Framing from GPT
+
+GPT characterized the difference as:
+
+> **"Mine tries to tell you what's likely true/false and how the post works on you; yours tries to model what the post is actually *saying* and how strong each link is."**
+
+This maps to a useful distinction:
+
+| Mode | Framework | Raw Analysis |
+|------|-----------|--------------|
+| **Role** | Mapmaker | Referee |
+| **Focus** | What's being claimed + link strength | What's true/false + how rhetoric works |
+| **Output** | Claim graph with confidence | Adjudicated facts + persuasion analysis |
+
+### Points of Agreement
+
+GPT confirmed our findings on both what the framework does well and what it misses:
+
+**Framework strengths** (GPT agrees):
+- Explicit claim segmentation + traceability
+- Epistemic bookkeeping (evidence levels, confidence)
+- Clean dialectical module (steelman + counters)
+- "What would change my mind?" baked in
+
+**Framework gaps** (GPT agrees):
+- Empirical anchoring / external baselines
+- Rhetorical / memetic mechanics
+- Internal tension check
+- Sanity-checking extreme prescriptions
+
+### Additional Insights from GPT
+
+1. **Internal tensions are a distinct gap** (META-2026-007): GPT specifically noted that its raw analysis caught that "the post simultaneously claims near-term godlike automation/space horizons *and* treats territorial mineral grabs as decisive—there's a potential inconsistency." The framework didn't prompt for this.
+
+2. **Evidence levels need external legibility** (noted by GPT): "It's not clear (to an external reader) what E3 vs E6 *means*, and the scores aren't tied to citations or a scoring rubric."
+
+3. **Specific merged artifact proposal** (META-2026-008): GPT proposed adding a "Baseline / evidence anchors" column per claim with:
+   - What external reporting supports
+   - What's untested speculation
+   - What would count as disconfirmation
+
+### Additional Meta-Claims from GPT Comparison
+
+| # | Claim | Claim ID | Type | Evidence Level | Confidence |
+|---|-------|----------|------|----------------|------------|
+| 6 | Framework = "mapmaker" (models claims + link strength); Raw = "referee" (adjudicates truth + rhetoric) | META-2026-006 | [T] | E3 | 0.80 |
+| 7 | Framework misses internal tension detection: where premise A undermines motivation B | META-2026-007 | [F] | E2 | 0.75 |
+| 8 | Merged artifact should add "baseline/evidence anchors" column per claim | META-2026-008 | [H] | E4 | 0.70 |
+
+---
+
 ## Proposed Framework Improvements
 
 Based on this evaluation, the following additions to the **Source Analysis Template** (AGENTS.md) are recommended:
@@ -180,14 +237,34 @@ Based on this evaluation, the following additions to the **Source Analysis Templ
 
 **Rationale**: Raw analysis caught that the source's "endgame tech" premise undermines its "seize Greenland" conclusion. Framework should prompt for this.
 
-### 4. Consider Two-Pass Workflow
+### 4. Add Evidence Anchors Column to Claim Tables (from GPT)
+
+Per META-2026-008, extend the Key Claims table with verification columns:
+
+```markdown
+| # | Claim | Claim ID | Type | Evidence | Conf | Baseline/Anchor | Disconfirmation |
+|---|-------|----------|------|----------|------|-----------------|-----------------|
+| 1 | [text] | ID | [T] | E4 | 0.5 | [external source] | [what would refute] |
+```
+
+**Rationale**: This integrates fact-checking into the structured output rather than treating it as separate.
+
+### 5. Add Evidence Level Rubric to Template Header
+
+Per GPT's note on external legibility, include a brief reminder:
+
+```markdown
+**Evidence Levels**: E1=Replicated empirical | E2=Single study/case | E3=Grounded theory | E4=Speculative theory | E5=Expert opinion | E6=Pure speculation
+```
+
+### 6. Consider Two-Pass Workflow
 
 For high-value sources:
 
 - **Pass 1**: Framework analysis (structured extraction, claim IDs, confidence)
 - **Pass 2**: Deep dive on key claims (fact-checking, rhetoric, internal tensions)
 
-This combines tractability with depth where warranted.
+This combines the "mapmaker" (framework) and "referee" (raw) modes where warranted.
 
 ---
 
@@ -211,6 +288,7 @@ This reflexive practice keeps the framework adaptive rather than ossified.
 
 - Raw analysis: [reference/transcripts/gpt-2026-01-19-greenland-endgame.md](../../reference/transcripts/gpt-2026-01-19-greenland-endgame.md)
 - Framework analysis: [analysis/sources/teortaxes-2026-greenland-endgame.md](../sources/teortaxes-2026-greenland-endgame.md)
+- GPT self-comparison: [reference/transcripts/gpt-2026-01-19-framework-comparison.md](../../reference/transcripts/gpt-2026-01-19-framework-comparison.md)
 - Framework methodology: [AGENTS.md](../../AGENTS.md)
 - Workflow procedures: [docs/WORKFLOWS.md](../../docs/WORKFLOWS.md)
 
