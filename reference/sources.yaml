@@ -1,0 +1,84 @@
+# Source Registry
+# Master bibliography of all sources analyzed in this project
+# Format: BibTeX-compatible YAML
+# See AGENTS.md for field definitions
+
+sources:
+
+  # Example entry (commented out)
+  # epoch-2024-training-costs:
+  #   type: "REPORT"
+  #   title: "How Much Does It Cost to Train Frontier AI Models?"
+  #   author: ["Epoch AI"]
+  #   year: 2024
+  #   url: "https://epoch.ai/blog/how-much-does-it-cost-to-train-frontier-ai-models"
+  #   accessed: "2026-01-18"
+  #   reliability: 0.8
+  #   bias_notes: "Pro-AI-progress framing but methodologically careful"
+  #   claims_extracted: []
+  #   analysis_file: ""
+  #   topics: ["compute", "costs", "frontier-models"]
+  #   domains: ["TECH", "RESOURCE"]
+
+  # Conversational analyses
+  gpt-2026-hottakes-analysis:
+    type: "CONVO"
+    title: "Post-Singularity Economics Hot Takes Analysis"
+    author: ["lhl", "GPT-5.2-Pro"]
+    year: 2026
+    url: "https://chatgpt.com/c/696c71e2-ebe8-8322-90ee-2bd0e35cb7b1"
+    accessed: "2026-01-18"
+    reliability: 0.6  # Conversational, needs verification
+    bias_notes: "Exploratory analysis session, claims need primary source verification"
+    claims_extracted: []  # TODO: Extract and register claims
+    analysis_file: "reference/RESEARCH-gpt5.2pro-hottakes-analysis.md"
+    topics: ["neofeudalism", "post-labor", "automation", "underclass", "multipolarity"]
+    domains: ["LABOR", "DIST", "GOV", "TECH", "TRANS"]
+
+  gpt-2026-fiction-hottakes:
+    type: "CONVO"
+    title: "Fiction Recommendations then Hot Takes Analysis"
+    author: ["lhl", "GPT-5.2-Pro"]
+    year: 2026
+    url: ""
+    accessed: "2026-01-18"
+    reliability: 0.6
+    bias_notes: "Exploratory analysis session"
+    claims_extracted: []
+    analysis_file: "reference/RESEARCH-gpt5.2pro-fiction-then-hottakes-analysis.md"
+    topics: ["neofeudalism", "post-labor", "fiction", "alternatives"]
+    domains: ["LABOR", "DIST", "SOCIAL"]
+
+  # Primary sources referenced in conversations
+  hotz-2026-three-minutes:
+    type: "BLOG"
+    title: "You have three minutes to escape the perpetual underclass"
+    author: ["George Hotz"]
+    year: 2026
+    url: "https://geohot.github.io/blog/jekyll/update/2026/01/17/three-minutes.html"
+    accessed: "2026-01-18"
+    reliability: 0.5
+    bias_notes: "Individual opinion, provocative framing"
+    claims_extracted: []
+    analysis_file: ""
+    topics: ["neofeudalism", "tech-work", "participation"]
+    domains: ["LABOR", "DIST", "SOCIAL"]
+
+  hotz-2026-how-stop:
+    type: "BLOG"
+    title: "How do I stop?"
+    author: ["George Hotz"]
+    year: 2026
+    url: "https://geohot.github.io/blog/jekyll/update/2026/01/18/how-do-i-stop.html"
+    accessed: "2026-01-18"
+    reliability: 0.5
+    bias_notes: "Follow-up to three-minutes, more operational"
+    claims_extracted: []
+    analysis_file: ""
+    topics: ["open-source", "ownership", "alternatives"]
+    domains: ["TECH", "DIST"]
+
+# Statistics
+# Total sources: 4
+# By type: CONVO: 2, BLOG: 2
+# Last updated: 2026-01-18

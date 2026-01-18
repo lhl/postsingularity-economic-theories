@@ -1,0 +1,54 @@
+# Claim Registry
+# Master index of all claims extracted and analyzed
+# See AGENTS.md for claim ID format and field definitions
+
+# Counter tracking (for generating sequential IDs)
+counters:
+  LABOR: 0
+  VALUE: 0
+  DIST: 0
+  GOV: 0
+  TECH: 0
+  SOCIAL: 0
+  RESOURCE: 0
+  TRANS: 0
+  META: 0
+
+# Claims index
+# Full claim details in by-domain/ files; this is the master lookup
+
+claims: {}
+
+# Example claim entry (for reference):
+# TECH-2026-001:
+#   text: "Frontier AI training costs grow 2-3x annually"
+#   type: "[F]"
+#   domain: "TECH"
+#   evidence_level: "E2"
+#   confidence: 0.75
+#   source_ids: ["epoch-2024-training-costs"]
+#   first_extracted: "2026-01-18"
+#   extracted_by: "claude"
+#   supports: []
+#   contradicts: []
+#   depends_on: []
+#   modified_by: []
+#   part_of_chain: ""
+#   version: 1
+#   last_updated: "2026-01-18"
+
+# Argument chains index
+chains: {}
+
+# Example chain entry:
+# CHAIN-2026-001:
+#   name: "Permanent Underclass"
+#   thesis: "Post-labor economy leads to permanent underclass by default"
+#   confidence: 0.35
+#   claims: ["LABOR-2026-001", "DIST-2026-001", "DIST-2026-002"]
+#   analysis_file: "claims/chains/permanent-underclass.md"
+
+# Statistics
+# Total claims: 0
+# Total chains: 0
+# Last updated: 2026-01-18
