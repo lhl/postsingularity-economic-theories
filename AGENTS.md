@@ -28,6 +28,17 @@ When making significant framework changes, increment version and document:
 ### Continuous Improvement
 **Update this AGENTS.md aggressively** as we refine our process. This document should always reflect current best practices. When you discover a better way to do something, document it here immediately.
 
+### Major Framework Changes
+For significant methodology updates (new template sections, workflow changes, etc.):
+1. Create `docs/IMPLEMENTATION-[change-name].md` with:
+   - Summary of what's changing and why
+   - Punchlist of specific items to update
+   - Worklog tracking progress
+   - Template diffs showing before/after
+2. Work through the punchlist, updating worklog as items complete
+3. Mark implementation doc as complete when done
+4. This ensures complex changes are tracked and reversible
+
 ### Git Practices
 - Commit frequently as work progresses
 - Push to remote regularly
@@ -545,15 +556,17 @@ When analyzing a new document/source:
 - **Reliability**: [0.0-1.0]
 - **Rigor Level**: [SPITBALL | DRAFT | REVIEWED | CANONICAL]
 
+> **Evidence Levels**: E1=Replicated empirical | E2=Single study/case | E3=Grounded theory | E4=Speculative theory | E5=Expert opinion | E6=Pure speculation
+
 ## Stage 1: Descriptive Summary
 
 ### Core Thesis
 [1-3 sentence summary of main argument]
 
 ### Key Claims
-| # | Claim | Claim ID | Type | Domain | Evidence Level | Confidence |
-|---|-------|----------|------|--------|----------------|------------|
-| 1 | | | | | | |
+| # | Claim | Claim ID | Type | Domain | Evid | Conf | Verified? | Falsifiable By |
+|---|-------|----------|------|--------|------|------|-----------|----------------|
+| 1 | | | | | | | [source or ?] | [what would refute] |
 
 ### Argument Structure
 [Is this a chain argument? What's the logical flow?]
@@ -576,6 +589,21 @@ When analyzing a new document/source:
 
 ### Internal Coherence
 [Does the argument follow logically? Any contradictions?]
+
+### Key Factual Claims Verified
+| Claim (paraphrased) | Source Says | Actual | External Source | Status |
+|---------------------|-------------|--------|-----------------|--------|
+| [e.g., "China makes 50% of stuff"] | [assertion] | [verified] | [URL/ref] | ✓ / ✗ / ? |
+
+### Internal Tensions / Self-Contradictions
+| Tension | Parts in Conflict | Implication |
+|---------|-------------------|-------------|
+| [description] | [Premise A] vs [Conclusion B] | [what it means for validity] |
+
+### Persuasion Techniques
+| Technique | Example from Source | Effect on Reader |
+|-----------|---------------------|------------------|
+| [e.g., Composition fallacy] | [quote] | [how it biases interpretation] |
 
 ### Identified Contradictions
 | Claim 1 | Claim 2 | Nature of Contradiction |

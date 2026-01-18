@@ -98,8 +98,11 @@ ln -s ../../reference/primary/[author]-[year]-[shorttitle].pdf .
    ```
 
 2. **Use Source Analysis Template** (from AGENTS.md):
-   - Stage 1: Descriptive Summary
-   - Stage 2: Evaluation
+   - Stage 1: Descriptive Summary (include Verified? and Falsifiable By columns)
+   - Stage 2: Evaluation (must include):
+     - Key Factual Claims Verified (with external sources)
+     - Internal Tensions / Self-Contradictions
+     - Persuasion Techniques
    - Stage 3: Dialectical Analysis
 
 3. **Extract claims** as you analyze:
