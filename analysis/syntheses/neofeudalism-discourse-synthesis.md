@@ -321,10 +321,13 @@ Tracking signals to discriminate between scenarios:
 
 ## Related Documents
 
-- Argument chain details: `claims/chains/permanent-underclass.md` (to create)
-- Scenario matrix: `scenarios/post-automation-governance.md` (to create)
-- Indicator dashboard: `tracking/dashboards/neofeudalism-indicators.md` (to create)
-- Primary source analyses: `analysis/sources/hotz-2026-*.md`, `analysis/sources/teortaxes-2026-thread.md` (to create)
+- Argument chain details:
+  - [claims/chains/permanent-underclass.md](../../claims/chains/permanent-underclass.md) - CHAIN-2026-001 analysis
+  - [claims/chains/genocide-default.md](../../claims/chains/genocide-default.md) - CHAIN-2026-002 analysis
+  - [claims/chains/open-source-de-darkener.md](../../claims/chains/open-source-de-darkener.md) - CHAIN-2026-003 analysis
+- Scenario matrix: [scenarios/post-automation-governance.md](../../scenarios/post-automation-governance.md)
+- Indicator dashboard: [tracking/dashboards/neofeudalism-indicators.md](../../tracking/dashboards/neofeudalism-indicators.md)
+- Primary source analyses: Covered by this synthesis at `[DRAFT]` level per D5 decision (see [docs/IMPLEMENTATION-feedback-improvements.md](../../docs/IMPLEMENTATION-feedback-improvements.md))
 
 ---
 
@@ -347,4 +350,4 @@ Tracking signals to discriminate between scenarios:
 **Analysis Confidence**: 0.65
 **Framework Confidence**: 0.70 (useful structure, needs testing on more sources)
 
-*Last Updated: 2026-01-18*
+*Last Updated: 2026-01-19*

@@ -383,7 +383,7 @@ chains:
     thesis: "Post-labor economy leads to permanent underclass by default"
     confidence: 0.30
     claims: ["LABOR-2026-002", "LABOR-2026-001", "DIST-2026-003"]
-    analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
+    analysis_file: "claims/chains/permanent-underclass.md"
     weakest_link: "Labor irrelevant → no income (assumes no redistribution)"
 
   CHAIN-2026-002:
@@ -391,7 +391,7 @@ chains:
     thesis: "Elites will choose genocide over UBI"
     confidence: 0.10
     claims: ["LABOR-2026-002", "GOV-2026-002"]
-    analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
+    analysis_file: "claims/chains/genocide-default.md"
     weakest_link: "Elite coordination (Step D)"
 
   CHAIN-2026-003:
@@ -399,7 +399,7 @@ chains:
     thesis: "Open model diffusion shifts power struggle from cognition to infrastructure"
     confidence: 0.60
     claims: ["TECH-2026-004", "DIST-2026-002"]
-    analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
+    analysis_file: "claims/chains/open-source-de-darkener.md"
     weakest_link: "Inference at scale may still centralize"
 
 # Statistics
