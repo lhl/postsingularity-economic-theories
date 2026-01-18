@@ -135,6 +135,7 @@ All analysis follows a **three-stage process**:
 | [Three Minutes to Escape](https://geohot.github.io/blog/jekyll/update/2026/01/17/three-minutes.html) | George Hotz | Blog | 0.5 |
 | [How Do I Stop?](https://geohot.github.io/blog/jekyll/update/2026/01/18/how-do-i-stop.html) | George Hotz | Blog | 0.5 |
 | Post-labor thread | @teortaxesTex | Social | 0.4 |
+| [Greenland endgame post](https://x.com/teortaxesTex/status/2012127205728440495) | @teortaxesTex | Social | 0.3 |
 | Genocide > UBI thread | @Xenoimpulse | Social | 0.3 |
 | [Training Costs Report](https://epoch.ai/blog/how-much-does-it-cost-to-train-frontier-ai-models) | Epoch AI | Report | 0.8 |
 | [Energy and AI](https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai) | IEA | Report | 0.85 |

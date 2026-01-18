@@ -7,11 +7,11 @@ counters:
   LABOR: 3
   VALUE: 2
   DIST: 6
-  GOV: 11
+  GOV: 15
   TECH: 4
   SOCIAL: 0
-  RESOURCE: 2
-  TRANS: 0
+  RESOURCE: 3
+  TRANS: 2
   META: 0
 
 # Claims index
@@ -116,6 +116,23 @@ claims:
     source_ids: ["reuters-rio-tinto-amazon"]
     first_extracted: "2026-01-18"
     extracted_by: "claude"
+    supports: ["DIST-2026-001"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  RESOURCE-2026-003:
+    text: "Strategic value shifts toward long-run control of extractable raw inputs (e.g., critical minerals, oil, energy), even if extraction is slow/hard"
+    type: "[T]"
+    domain: "RESOURCE"
+    evidence_level: "E4"
+    confidence: 0.45
+    source_ids: ["teortaxes-2026-greenland-endgame"]
+    first_extracted: "2026-01-18"
+    extracted_by: "gpt-5.2"
     supports: ["DIST-2026-001"]
     contradicts: []
     depends_on: []
@@ -517,6 +534,110 @@ claims:
     last_updated: "2026-01-18"
     notes: "Contested: regimes typically invest in legitimacy because it is cheaper than pure coercion"
 
+  GOV-2026-012:
+    text: "US behavior (e.g., Greenland/Venezuela bargaining) can be interpreted as coherent resource-extraction strategy that overrides alliance norms"
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E6"
+    confidence: 0.20
+    source_ids: ["teortaxes-2026-greenland-endgame"]
+    first_extracted: "2026-01-18"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  GOV-2026-013:
+    text: "Legal/formal ownership claims can reduce the cost of coercive control by making anti-aggressor coalitions harder to form"
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E3"
+    confidence: 0.55
+    source_ids: ["teortaxes-2026-greenland-endgame"]
+    first_extracted: "2026-01-18"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  GOV-2026-014:
+    text: "Europe’s feasible response to US territorial/resource pressure is delay/placation plus diversification and partial rearmament, not direct confrontation"
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E6"
+    confidence: 0.25
+    source_ids: ["teortaxes-2026-greenland-endgame"]
+    first_extracted: "2026-01-18"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  GOV-2026-015:
+    text: "A faction of US tech/policy elites holds a longtermist 'endgame' worldview motivating resource competition (e.g., Musk/Thiel/Karp/Matheny)"
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E6"
+    confidence: 0.15
+    source_ids: ["teortaxes-2026-greenland-endgame"]
+    first_extracted: "2026-01-18"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  # === TRANS Domain ===
+
+  TRANS-2026-001:
+    text: "A 'light-cone' framing treats geopolitics as competition for energy and matter ('joules and atoms') to seed a spacefaring civilization"
+    type: "[T]"
+    domain: "TRANS"
+    evidence_level: "E4"
+    confidence: 0.35
+    source_ids: ["teortaxes-2026-greenland-endgame"]
+    first_extracted: "2026-01-18"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  TRANS-2026-002:
+    text: "Under a resource-maximizer endgame framing, states will prefer direct control over resource bases and aim to reduce dependence on trade over time"
+    type: "[H]"
+    domain: "TRANS"
+    evidence_level: "E4"
+    confidence: 0.40
+    source_ids: ["teortaxes-2026-greenland-endgame"]
+    first_extracted: "2026-01-18"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
 # Argument chains index
 chains:
 
@@ -545,6 +666,6 @@ chains:
     weakest_link: "DIST-2026-006 (inference centralization vs diffusion)"
 
 # Statistics
-# Total claims: 28
+# Total claims: 35
 # Total chains: 3
 # Last updated: 2026-01-18
