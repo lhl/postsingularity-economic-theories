@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git remote*)",
+      "Bash(git ls-files*)",
+      "Bash(git branch*)",
+      "Bash(ls *)",
+      "Bash(ls)",
+      "Bash(mkdir *)",
+      "Bash(mv *)",
+      "Bash(find *)",
+      "Bash(head *)",
+      "Bash(grep *)",
+      "Bash(cat *)",
+      "Bash(tree *)",
+      "Bash(touch *)",
+      "Read(*)",
+      "Write(*)",
+      "Edit(*)",
+      "Glob(*)",
+      "Grep(*)"
+    ],
+    "deny": []
+  }
+}
