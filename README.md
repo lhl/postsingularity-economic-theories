@@ -23,7 +23,7 @@ The framework is itself under development—we refine it as we encounter new typ
 
 ### Claims Registered
 
-**20 claims** across 6 domains, with **3 argument chains** mapped:
+**28 claims** across 6 domains, with **3 argument chains** mapped:
 
 | Chain | Thesis | Confidence |
 |-------|--------|------------|

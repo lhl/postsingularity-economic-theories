@@ -34,6 +34,8 @@ sources:
       - "TECH-2026-004"
       - "DIST-2026-001"
       - "DIST-2026-002"
+      - "DIST-2026-005"
+      - "DIST-2026-006"
       - "GOV-2026-004"
       - "GOV-2026-005"
       - "GOV-2026-006"
@@ -55,6 +57,8 @@ sources:
       - "TECH-2026-004"
       - "DIST-2026-001"
       - "DIST-2026-002"
+      - "DIST-2026-005"
+      - "DIST-2026-006"
       - "GOV-2026-006"
     analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
     topics: ["neofeudalism", "post-labor", "fiction", "alternatives"]
@@ -102,6 +106,8 @@ sources:
     claims_extracted:
       - "TECH-2026-003"
       - "LABOR-2026-002"
+      - "LABOR-2026-003"
+      - "VALUE-2026-002"
       - "DIST-2026-003"
       - "GOV-2026-003"
     analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
@@ -119,6 +125,10 @@ sources:
     bias_notes: "Extreme nihilistic framing, multiple weak premises"
     claims_extracted:
       - "GOV-2026-002"
+      - "GOV-2026-008"
+      - "GOV-2026-009"
+      - "GOV-2026-010"
+      - "GOV-2026-011"
     analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
     topics: ["genocide", "ubi", "coercion", "elite-coordination"]
     domains: ["GOV", "DIST"]
@@ -251,6 +261,81 @@ sources:
     domains: ["LABOR", "TECH"]
     status: "cataloged"
 
+  situational-awareness:
+    type: "REPORT"
+    title: "SITUATIONAL AWARENESS: The Decade Ahead"
+    author: ["Leopold Aschenbrenner"]
+    year: 2024
+    url: "https://situational-awareness.ai/"
+    accessed: "2026-01-18"
+    reliability: 0.6
+    bias_notes: "Forward-looking essay series; pro-AI-progress framing; not peer reviewed"
+    claims_extracted: []  # Cited in synthesis; not directly extracted
+    analysis_file: ""
+    topics: ["ai-forecasting", "compute", "agi", "national-security"]
+    domains: ["TECH", "RESOURCE", "GOV", "TRANS"]
+    status: "cataloged"
+
+  ai-2027:
+    type: "REPORT"
+    title: "AI 2027"
+    author: ["Daniel Kokotajlo", "Scott Alexander", "Thomas Larsen", "Eli Lifland", "Romeo Dean"]
+    year: 2025
+    url: "https://ai-2027.com/"
+    accessed: "2026-01-18"
+    reliability: 0.6
+    bias_notes: "Scenario forecast; speculative; useful for discriminating indicators"
+    claims_extracted: []  # Cited in synthesis; not directly extracted
+    analysis_file: ""
+    topics: ["ai-forecasting", "timelines", "agents", "alignment"]
+    domains: ["TECH", "TRANS", "GOV"]
+    status: "cataloged"
+
+  hooker-hardware-lottery:
+    type: "PAPER"
+    title: "The Hardware Lottery"
+    author: ["Sara Hooker"]
+    year: 2020
+    url: "https://hardwarelottery.github.io/"
+    accessed: "2026-01-18"
+    reliability: 0.75
+    bias_notes: "Perspective paper on how hardware availability shapes ML research; arXiv:2009.06489"
+    claims_extracted: []  # Cited in synthesis; not directly extracted
+    analysis_file: ""
+    topics: ["hardware", "compute", "ml", "research"]
+    domains: ["TECH", "RESOURCE", "DIST"]
+    status: "cataloged"
+
+  varoufakis-technofeudalism:
+    type: "BOOK"
+    title: "Technofeudalism: What Killed Capitalism"
+    author: ["Yanis Varoufakis"]
+    year: 2024
+    url: "https://www.penguinrandomhouse.com/books/751443/technofeudalism-by-yanis-varoufakis/"
+    accessed: "2026-01-18"
+    reliability: 0.65
+    bias_notes: "Heterodox political economy; provocative framing; useful as theory reference"
+    claims_extracted: []  # Cited in synthesis; not directly extracted
+    analysis_file: ""
+    topics: ["technofeudalism", "platforms", "capitalism", "political-economy"]
+    domains: ["DIST", "VALUE", "GOV"]
+    status: "cataloged"
+
+  butler-1863-darwin-machines:
+    type: "ARTICLE"
+    title: "Darwin among the Machines"
+    author: ["Samuel Butler"]
+    year: 1863
+    url: "https://en.wikisource.org/wiki/Darwin_among_the_Machines"
+    accessed: "2026-01-18"
+    reliability: 0.9
+    bias_notes: "Primary historical text; wikisource transcription"
+    claims_extracted: []  # Cited in synthesis; not directly extracted
+    analysis_file: ""
+    topics: ["automation", "machines", "history"]
+    domains: ["TECH", "SOCIAL"]
+    status: "cataloged"
+
   # Background knowledge (stub entries for standard references)
   standard-economics:
     type: "KNOWLEDGE"
@@ -301,6 +386,6 @@ sources:
     status: "cataloged"
 
 # Statistics
-# Total sources: 17
-# By type: CONVO: 2, BLOG: 2, SOCIAL: 2, REPORT: 4, PAPER: 2, ARTICLE: 2, KNOWLEDGE: 3
+# Total sources: 22
+# By type: CONVO: 2, BLOG: 2, SOCIAL: 2, REPORT: 6, PAPER: 3, ARTICLE: 3, BOOK: 1, KNOWLEDGE: 3
 # Last updated: 2026-01-18

@@ -50,9 +50,13 @@ Both sessions arrive at similar conclusions but via different paths. This synthe
 | ID | Claim | Type | Evidence | Confidence | Sources |
 |----|-------|------|----------|------------|---------|
 | LABOR-2026-001 | If AI substitutes human labor in most tasks, wages fall and capital share rises | [T] | E3 | 0.85 | Standard factor share economics |
+| LABOR-2026-003 | Full automation → labor becomes economically irrelevant (labor share approaches ~0) | [T] | E4 | 0.40 | @teortaxesTex; contested |
 | VALUE-2026-001 | Post-labor requires some income distribution mechanism or consumption collapses | [T] | E3 | 0.80 | Macro identity (demand must come from somewhere) |
+| VALUE-2026-002 | Labor economically irrelevant → no consumer purchasing power (absent redistribution) | [A] | E4 | 0.30 | @teortaxesTex; weakest-link assumption |
 | DIST-2026-001 | Compute + energy + chips becoming primary chokepoints for economic power | [T] | E3 | 0.75 | Analysis of bottleneck structure |
 | DIST-2026-002 | Bottleneck control, not model access, determines "feudal" vs "abundance" outcomes | [T] | E4 | 0.70 | Both sessions converge here |
+| DIST-2026-005 | The premise that "only billionaires can afford AI cognition" is false for most domains | [T] | E2 | 0.75 | Open models; user experience |
+| DIST-2026-006 | Inference at scale may centralize around power/datacenters even if models commoditize | [H] | E4 | 0.55 | Bottleneck/infrastructure uncertainty |
 
 ### Tier 3: Political/Prediction Claims (Weakest)
 
@@ -62,6 +66,10 @@ Both sessions arrive at similar conclusions but via different paths. This synthe
 | DIST-2026-003 | Post-labor → permanent underclass is "default" outcome | [P] | E5 | 0.30 | @teortaxesTex; assumes no redistribution |
 | GOV-2026-001 | Property rights will become arbitrary/confiscatable in neofeudal regime | [H] | E6 | 0.25 | Hotz; contradicts equity-escape thesis |
 | GOV-2026-002 | Elites will choose genocide over UBI | [S] | E6 | 0.10 | @Xenoimpulse; multiple weak premises |
+| GOV-2026-008 | Even post-labor, humans remain a threat vector (revolt, sabotage, voting) | [F] | E1 | 0.90 | @Xenoimpulse; premise |
+| GOV-2026-009 | AI/automation makes coercion cheap and reliable at scale | [H] | E5 | 0.25 | @Xenoimpulse; contested |
+| GOV-2026-010 | Elites can coordinate on extreme solutions (including mass extermination) in a post-labor world | [H] | E6 | 0.15 | @Xenoimpulse; very weak |
+| GOV-2026-011 | Moral norms and legitimacy stop constraining elite behavior in a post-labor world | [H] | E6 | 0.20 | @Xenoimpulse; weak |
 | GOV-2026-003 | US elites "ahead of curve" and coordinating on post-labor strategy | [S] | E6 | 0.20 | @teortaxesTex; unfalsifiable |
 
 ### Tier 4: Counter-Claims (From Analysis)
@@ -83,21 +91,21 @@ Both sessions arrive at similar conclusions but via different paths. This synthe
 ```
 CHAIN-2026-001: Permanent Underclass Thesis
 
-[A] AI progress continues → full automation by 2035-2045
+[A] LABOR-2026-002: AI progress continues → full automation by 2035-2045
     - Status: CONTESTED (timeline speculative, "full" undefined)
     - Confidence: 0.35
     ↓ implies
-[B] Full automation → labor becomes economically irrelevant
+[B] LABOR-2026-003: Full automation → labor becomes economically irrelevant
     - Status: WEAK (ignores task recomposition, complementarity)
     - Confidence: 0.40
     ↓ implies
-[C] Labor irrelevant → no consumer purchasing power
+[C] VALUE-2026-002: Labor irrelevant → no consumer purchasing power (absent redistribution)
     - Status: WEAK (assumes no redistribution mechanism)
     - Confidence: 0.30
     ↓ implies
-[D] No purchasing power + concentrated ownership → permanent underclass
+[D] DIST-2026-003: No purchasing power + concentrated ownership → permanent underclass
     - Status: CONTESTED (political choice, not economic law)
-    - Confidence: 0.40
+    - Confidence: 0.30
 
 Overall Chain Confidence: 0.25-0.35
 
@@ -111,27 +119,27 @@ If Link Breaks: High automation compatible with mass prosperity via redistributi
 ```
 CHAIN-2026-002: Genocide > UBI Thesis
 
-[A] Labor becomes economically irrelevant (same as Chain 1)
-    - Status: CONTESTED
-    - Confidence: 0.35
+[A] LABOR-2026-003: Labor becomes economically irrelevant
+    - Status: WEAK
+    - Confidence: 0.40
     ↓ AND
-[B] Humans remain a threat vector (can revolt, sabotage, vote)
+[B] GOV-2026-008: Humans remain a threat vector (can revolt, sabotage, vote)
     - Status: SOLID (trivially true)
     - Confidence: 0.90
     ↓ AND
-[C] Coercion becomes cheap and reliable via AI/automation
+[C] GOV-2026-009: Coercion becomes cheap and reliable via AI/automation
     - Status: WEAK (history shows fragile control, not perfect control)
     - Confidence: 0.25
     ↓ AND
-[D] Elites can coordinate on extreme solution
+[D] GOV-2026-010: Elites can coordinate on extreme solution
     - Status: VERY WEAK (coordination nightmare; internal paranoia)
     - Confidence: 0.15
     ↓ AND
-[E] Moral norms / legitimacy stop constraining behavior
+[E] GOV-2026-011: Moral norms / legitimacy stop constraining behavior
     - Status: WEAK (regimes invest heavily in legitimacy because it's cheaper)
     - Confidence: 0.20
     ↓ implies
-[CONCLUSION] Mass extermination is instrumentally rational and selected
+[CONCLUSION] GOV-2026-002: Elites will choose genocide over UBI
 
 Overall Chain Confidence: 0.05-0.10
 
@@ -145,19 +153,19 @@ If Link Breaks: Even ugly outcomes (managed underclass) ≠ genocide
 ```
 CHAIN-2026-003: Multipolar Diffusion Counter-Thesis
 
-[A] Open models within months of frontier on economically decisive capabilities
+[A] TECH-2026-004: Open models within months of frontier on economically decisive capabilities
     - Status: SOLID (empirical: DeepSeek-R1, user experience)
     - Confidence: 0.75
     ↓ implies
-[B] "Only billionaires afford AI cognition" thesis false for most domains
+[B] DIST-2026-005: "Only billionaires afford AI cognition" thesis false for most domains
     - Status: SOLID (already true for language, coding, math)
     - Confidence: 0.75
     ↓ BUT
-[C] Inference at scale may still centralize around power/datacenters
+[C] DIST-2026-006: Inference at scale may still centralize around power/datacenters
     - Status: CONTESTED (slow takeoff = durable bottleneck, but distributed too)
     - Confidence: 0.55
     ↓ implies
-[D] Real "neofeudal" risk shifts from cognition to infrastructure control
+[D] DIST-2026-002: Real "neofeudal" risk shifts from cognition to infrastructure control
     - Status: SOLID (reframing accepted by both sessions)
     - Confidence: 0.70
 
@@ -339,9 +347,9 @@ Tracking signals to discriminate between scenarios:
 | iea-2024-energy-ai | Energy and AI: Energy Supply for AI | REPORT | https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai |
 | situational-awareness | Situational Awareness: The Decade Ahead | REPORT | https://situational-awareness.ai/ |
 | ai-2027 | AI 2027 | REPORT | https://ai-2027.com/ |
-| varoufakis-technofeudalism | Technofeudalism | BOOK | https://www.penguinrandomhouse.com/books/751443/technofeudalism-by-yanis-varoufakis/ |
-| acemoglu-restrepo-tasks | Automation and New Tasks | PAPER | https://www.aeaweb.org/articles?id=10.1257%2Fjep.33.2.3 |
-| butler-1863-darwin-machines | Darwin Among the Machines | ARTICLE | https://mediarep.org/... |
+| varoufakis-technofeudalism | Technofeudalism: What Killed Capitalism | BOOK | https://www.penguinrandomhouse.com/books/751443/technofeudalism-by-yanis-varoufakis/ |
+| acemoglu-restrepo-2019-tasks | Automation and New Tasks: How Technology Displaces and Reinstates Labor | PAPER | https://www.aeaweb.org/articles?id=10.1257%2Fjep.33.2.3 |
+| butler-1863-darwin-machines | Darwin among the Machines | ARTICLE | https://en.wikisource.org/wiki/Darwin_among_the_Machines |
 | hooker-hardware-lottery | The Hardware Lottery | PAPER | https://hardwarelottery.github.io/ |
 | deepseek-r1 | DeepSeek-R1: Incentivizing Reasoning Capability | PAPER | https://arxiv.org/pdf/2501.12948 |
 

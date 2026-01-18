@@ -18,13 +18,13 @@
 ## Chain Structure
 
 ```
-[A] AI progress continues → full automation by 2035-2045
+[A] LABOR-2026-002: AI progress continues → full automation by 2035-2045
     ↓ implies
-[B] Full automation → labor becomes economically irrelevant
+[B] LABOR-2026-003: Full automation → labor becomes economically irrelevant
     ↓ implies
-[C] Labor irrelevant → no consumer purchasing power
+[C] VALUE-2026-002: Labor irrelevant → no consumer purchasing power (absent redistribution)
     ↓ implies
-[D] No purchasing power + concentrated ownership → permanent underclass
+[D] DIST-2026-003: No purchasing power + concentrated ownership → permanent underclass
 ```
 
 ---
@@ -52,11 +52,11 @@
 
 ### Link B: Labor Becomes Irrelevant
 
-- **Claim ID**: LABOR-2026-001 (implicit in chain)
-- **Text**: If AI substitutes human labor in most tasks, wages fall and capital share rises
+- **Claim ID**: LABOR-2026-003
+- **Text**: Full automation → labor becomes economically irrelevant (labor share approaches ~0)
 - **Type**: [T] Theory
-- **Evidence Level**: E3 (Theoretical-Grounded)
-- **Confidence**: 0.40 in this context
+- **Evidence Level**: E4 (Theoretical-Speculative)
+- **Confidence**: 0.40
 - **Status**: `WEAK`
 
 **Why Weak**:
@@ -71,8 +71,8 @@
 
 ### Link C: No Purchasing Power
 
-- **Implicit claim** (not separately registered)
-- **Text**: Labor irrelevance → no consumer income
+- **Claim ID**: VALUE-2026-002
+- **Text**: Labor economically irrelevant → no consumer purchasing power (absent redistribution)
 - **Type**: [A] Assumption
 - **Evidence Level**: E4 (Theoretical-Speculative)
 - **Confidence**: 0.30
@@ -94,7 +94,7 @@
 - **Text**: Post-labor → permanent underclass is 'default' outcome
 - **Type**: [P] Prediction
 - **Evidence Level**: E5 (Expert Opinion)
-- **Confidence**: 0.40 (for this specific claim; lower in chain context)
+- **Confidence**: 0.30
 - **Status**: `CONTESTED`
 
 **Why Contested**:
@@ -112,7 +112,7 @@
 | A | 0.35 | CONTESTED | Timeline speculative, "full" undefined |
 | B | 0.40 | WEAK | Ignores task recomposition, complementarity |
 | C | 0.30 | WEAK | Conflates labor income with all income |
-| D | 0.40 | CONTESTED | Political choice, not economic law |
+| D | 0.30 | CONTESTED | Political choice, not economic law |
 
 **Weakest Link**: Link C (labor irrelevance → no income)
 

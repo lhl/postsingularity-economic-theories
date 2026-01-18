@@ -18,15 +18,15 @@
 ## Chain Structure
 
 ```
-[A] Labor becomes economically irrelevant
+[A] LABOR-2026-003: Labor becomes economically irrelevant
     ↓ AND
-[B] Humans remain a threat vector (can revolt, sabotage, vote)
+[B] GOV-2026-008: Humans remain a threat vector (can revolt, sabotage, vote)
     ↓ AND
-[C] Coercion becomes cheap and reliable via AI/automation
+[C] GOV-2026-009: Coercion becomes cheap and reliable via AI/automation
     ↓ AND
-[D] Elites can coordinate on extreme solution
+[D] GOV-2026-010: Elites can coordinate on extreme solution
     ↓ AND
-[E] Moral norms / legitimacy stop constraining behavior
+[E] GOV-2026-011: Moral norms / legitimacy stop constraining behavior
     ↓ implies
 [CONCLUSION] Mass extermination is instrumentally rational and selected
 ```
@@ -37,21 +37,21 @@
 
 ### Link A: Labor Irrelevance
 
-- **Claim ID**: LABOR-2026-002 (shared with CHAIN-2026-001)
-- **Text**: Full automation of human labor by 2035-2045
-- **Type**: [P] Prediction
-- **Evidence Level**: E5
-- **Confidence**: 0.35
-- **Status**: `CONTESTED`
+- **Claim ID**: LABOR-2026-003
+- **Text**: Full automation → labor becomes economically irrelevant (labor share approaches ~0)
+- **Type**: [T] Theory
+- **Evidence Level**: E4
+- **Confidence**: 0.40
+- **Status**: `WEAK`
 
-**See**: [permanent-underclass.md](permanent-underclass.md) Link A for full analysis
+**See**: [permanent-underclass.md](permanent-underclass.md) Link B for full analysis
 
 ---
 
 ### Link B: Humans as Threat Vector
 
-- **Implicit claim** (not separately registered)
-- **Text**: Humans remain capable of revolt, sabotage, voting, etc.
+- **Claim ID**: GOV-2026-008
+- **Text**: Even post-labor, humans remain a threat vector (revolt, sabotage, voting)
 - **Type**: [F] Fact (trivially true)
 - **Evidence Level**: E1
 - **Confidence**: 0.90
@@ -63,8 +63,8 @@
 
 ### Link C: Cheap Reliable Coercion
 
-- **Implicit claim** (not separately registered)
-- **Text**: Coercion becomes cheap and reliable via AI/automation
+- **Claim ID**: GOV-2026-009
+- **Text**: AI/automation makes coercion cheap and reliable at scale
 - **Type**: [H] Hypothesis
 - **Evidence Level**: E5
 - **Confidence**: 0.25
@@ -85,7 +85,7 @@
 
 ### Link D: Elite Coordination
 
-- **Implicit claim** (not separately registered)
+- **Claim ID**: GOV-2026-010
 - **Text**: Elites can coordinate on extreme solution
 - **Type**: [H] Hypothesis
 - **Evidence Level**: E6
@@ -112,7 +112,7 @@ This is an N-player coordination problem with massive incentives to defect.
 
 ### Link E: Moral Constraints Dissolve
 
-- **Implicit claim** (not separately registered)
+- **Claim ID**: GOV-2026-011
 - **Text**: Moral norms and legitimacy concerns stop constraining elite behavior
 - **Type**: [H] Hypothesis
 - **Evidence Level**: E6

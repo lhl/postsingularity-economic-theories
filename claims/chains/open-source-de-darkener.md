@@ -18,13 +18,13 @@
 ## Chain Structure
 
 ```
-[A] Open models within months of frontier on economically decisive capabilities
+[A] TECH-2026-004: Open models within months of frontier on economically decisive capabilities
     ↓ implies
-[B] "Only billionaires afford AI cognition" thesis is false for most domains
+[B] DIST-2026-005: "Only billionaires afford AI cognition" thesis is false for most domains
     ↓ BUT
-[C] Inference at scale may still centralize around power/datacenters
+[C] DIST-2026-006: Inference at scale may still centralize around power/datacenters
     ↓ implies
-[D] Real "neofeudal" risk shifts from cognition to infrastructure control
+[D] DIST-2026-002: Real "neofeudal" risk shifts from cognition to infrastructure control
 ```
 
 ---
@@ -60,8 +60,8 @@
 
 ### Link B: Cognitive Monopoly False
 
-- **Implicit claim** (follows from Link A)
-- **Text**: The premise that "only billionaires can afford AI cognition" is false for most economically relevant domains
+- **Claim ID**: DIST-2026-005
+- **Text**: The premise that "only billionaires can afford AI cognition" is false for most domains
 - **Type**: [T] Theory
 - **Evidence Level**: E2
 - **Confidence**: 0.75
@@ -80,9 +80,9 @@
 
 ### Link C: Infrastructure Centralization
 
-- **Claim ID**: Related to DIST-2026-001, DIST-2026-002
+- **Claim ID**: DIST-2026-006
 - **Text**: Inference at scale may still centralize around power/datacenters
-- **Type**: [T] Theory
+- **Type**: [H] Hypothesis
 - **Evidence Level**: E4 (Theoretical-Speculative)
 - **Confidence**: 0.55
 - **Status**: `CONTESTED`

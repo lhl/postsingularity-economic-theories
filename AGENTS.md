@@ -33,6 +33,13 @@ When making significant framework changes, increment version and document:
 - Push to remote regularly
 - **No bylines or co-author footers in commit messages** - keep them clean and descriptive
 - Use conventional commit style when appropriate (feat:, fix:, docs:, refactor:)
+- Prefer `git mv` for renames/moves to preserve history
+- Default agent behavior: after making substantive changes, run validation, commit, and push unless explicitly told not to
+- Housekeeping before pushing:
+  - Run `python scripts/validate.py` and ensure it reports `OK`
+  - Ensure claim/source backlinks are updated in the same commit (atomicity)
+  - Update any relevant `# Statistics` and `*Last Updated*` markers touched by the change
+- Commit messages: use a concise subject + a detailed body describing what changed, why, and any migration notes
 
 ### Data Integrity Rules
 Cross-linking must be maintained:

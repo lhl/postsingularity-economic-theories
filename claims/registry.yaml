@@ -4,10 +4,10 @@
 
 # Counter tracking (for generating sequential IDs)
 counters:
-  LABOR: 2
-  VALUE: 1
-  DIST: 4
-  GOV: 7
+  LABOR: 3
+  VALUE: 2
+  DIST: 6
+  GOV: 11
   TECH: 4
   SOCIAL: 0
   RESOURCE: 2
@@ -135,11 +135,11 @@ claims:
     source_ids: ["standard-economics"]
     first_extracted: "2026-01-18"
     extracted_by: "claude"
-    supports: []
+    supports: ["LABOR-2026-003"]
     contradicts: []
     depends_on: []
     modified_by: []
-    part_of_chain: "CHAIN-2026-001"
+    part_of_chain: ""
     version: 1
     last_updated: "2026-01-18"
 
@@ -161,6 +161,24 @@ claims:
     last_updated: "2026-01-18"
     notes: "Timeline speculative; 'full' undefined; ignores task recomposition per Acemoglu-Restrepo (2019)"
 
+  LABOR-2026-003:
+    text: "Full automation → labor becomes economically irrelevant (labor share approaches ~0)"
+    type: "[T]"
+    domain: "LABOR"
+    evidence_level: "E4"
+    confidence: 0.40
+    source_ids: ["teortaxes-2026-thread"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["DIST-2026-003", "GOV-2026-002"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: "CHAIN-2026-001"
+    version: 1
+    last_updated: "2026-01-18"
+    notes: "Contested: ignores task recomposition and human-AI complementarity; 'economically irrelevant' often undefined"
+
   # === VALUE Domain ===
 
   VALUE-2026-001:
@@ -179,6 +197,24 @@ claims:
     part_of_chain: ""
     version: 1
     last_updated: "2026-01-18"
+
+  VALUE-2026-002:
+    text: "Labor economically irrelevant → no consumer purchasing power (absent redistribution)"
+    type: "[A]"
+    domain: "VALUE"
+    evidence_level: "E4"
+    confidence: 0.30
+    source_ids: ["teortaxes-2026-thread"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["DIST-2026-003"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: "CHAIN-2026-001"
+    version: 1
+    last_updated: "2026-01-18"
+    notes: "Weakest-link assumption in the permanent underclass chain; collapses if dividends/transfers/public provision scale"
 
   # === DIST Domain ===
 
@@ -227,7 +263,7 @@ claims:
     extracted_by: "claude"
     supports: []
     contradicts: ["VALUE-2026-001", "GOV-2026-004"]
-    depends_on: ["LABOR-2026-002"]
+    depends_on: ["LABOR-2026-002", "LABOR-2026-003", "VALUE-2026-002"]
     modified_by: []
     part_of_chain: "CHAIN-2026-001"
     version: 1
@@ -250,6 +286,41 @@ claims:
     part_of_chain: ""
     version: 1
     last_updated: "2026-01-18"
+
+  DIST-2026-005:
+    text: "The premise that 'only billionaires can afford AI cognition' is false for most domains"
+    type: "[T]"
+    domain: "DIST"
+    evidence_level: "E2"
+    confidence: 0.75
+    source_ids: ["gpt-2026-01-18-hottakes", "gpt-2026-01-18-fiction-hottakes"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["DIST-2026-002"]
+    contradicts: []
+    depends_on: ["TECH-2026-004"]
+    modified_by: []
+    part_of_chain: "CHAIN-2026-003"
+    version: 1
+    last_updated: "2026-01-18"
+
+  DIST-2026-006:
+    text: "Inference at scale may centralize around power/datacenters even if models commoditize"
+    type: "[H]"
+    domain: "DIST"
+    evidence_level: "E4"
+    confidence: 0.55
+    source_ids: ["gpt-2026-01-18-hottakes", "gpt-2026-01-18-fiction-hottakes"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["DIST-2026-001"]
+    contradicts: []
+    depends_on: ["RESOURCE-2026-001"]
+    modified_by: []
+    part_of_chain: "CHAIN-2026-003"
+    version: 1
+    last_updated: "2026-01-18"
+    notes: "Key uncertainty: efficiency/edge inference vs hyperscaler vertical integration and grid constraints"
 
   # === GOV Domain ===
 
@@ -282,7 +353,7 @@ claims:
     extracted_by: "claude"
     supports: []
     contradicts: ["GOV-2026-004", "GOV-2026-005"]
-    depends_on: ["LABOR-2026-002"]
+    depends_on: ["LABOR-2026-003", "GOV-2026-008", "GOV-2026-009", "GOV-2026-010", "GOV-2026-011"]
     modified_by: []
     part_of_chain: "CHAIN-2026-002"
     version: 1
@@ -375,6 +446,77 @@ claims:
     version: 2
     last_updated: "2026-01-18"
 
+  GOV-2026-008:
+    text: "Even post-labor, humans remain a threat vector (revolt, sabotage, voting)"
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E1"
+    confidence: 0.90
+    source_ids: ["xenoimpulse-2026-thread"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["GOV-2026-002"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: "CHAIN-2026-002"
+    version: 1
+    last_updated: "2026-01-18"
+
+  GOV-2026-009:
+    text: "AI/automation makes coercion cheap and reliable at scale"
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E5"
+    confidence: 0.25
+    source_ids: ["xenoimpulse-2026-thread"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["GOV-2026-002"]
+    contradicts: ["GOV-2026-004", "GOV-2026-005"]
+    depends_on: []
+    modified_by: []
+    part_of_chain: "CHAIN-2026-002"
+    version: 1
+    last_updated: "2026-01-18"
+    notes: "Contested: coercion historically fragile/expensive; automation introduces new points of failure"
+
+  GOV-2026-010:
+    text: "Elites can coordinate on extreme solutions (including mass extermination) in a post-labor world"
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E6"
+    confidence: 0.15
+    source_ids: ["xenoimpulse-2026-thread"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["GOV-2026-002"]
+    contradicts: ["GOV-2026-005"]
+    depends_on: []
+    modified_by: []
+    part_of_chain: "CHAIN-2026-002"
+    version: 1
+    last_updated: "2026-01-18"
+    notes: "Weakest link: N-player coordination problem with strong incentives to defect"
+
+  GOV-2026-011:
+    text: "Moral norms and legitimacy stop constraining elite behavior in a post-labor world"
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E6"
+    confidence: 0.20
+    source_ids: ["xenoimpulse-2026-thread"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["GOV-2026-002"]
+    contradicts: ["GOV-2026-004"]
+    depends_on: []
+    modified_by: []
+    part_of_chain: "CHAIN-2026-002"
+    version: 1
+    last_updated: "2026-01-18"
+    notes: "Contested: regimes typically invest in legitimacy because it is cheaper than pure coercion"
+
 # Argument chains index
 chains:
 
@@ -382,27 +524,27 @@ chains:
     name: "Permanent Underclass"
     thesis: "Post-labor economy leads to permanent underclass by default"
     confidence: 0.30
-    claims: ["LABOR-2026-002", "LABOR-2026-001", "DIST-2026-003"]
+    claims: ["LABOR-2026-002", "LABOR-2026-003", "VALUE-2026-002", "DIST-2026-003"]
     analysis_file: "claims/chains/permanent-underclass.md"
-    weakest_link: "Labor irrelevant → no income (assumes no redistribution)"
+    weakest_link: "VALUE-2026-002 (assumes no redistribution mechanism emerges)"
 
   CHAIN-2026-002:
     name: "Genocide Default"
     thesis: "Elites will choose genocide over UBI"
     confidence: 0.10
-    claims: ["LABOR-2026-002", "GOV-2026-002"]
+    claims: ["LABOR-2026-003", "GOV-2026-008", "GOV-2026-009", "GOV-2026-010", "GOV-2026-011", "GOV-2026-002"]
     analysis_file: "claims/chains/genocide-default.md"
-    weakest_link: "Elite coordination (Step D)"
+    weakest_link: "GOV-2026-010 (elite coordination)"
 
   CHAIN-2026-003:
     name: "Open Source De-Darkener"
     thesis: "Open model diffusion shifts power struggle from cognition to infrastructure"
     confidence: 0.60
-    claims: ["TECH-2026-004", "DIST-2026-002"]
+    claims: ["TECH-2026-004", "DIST-2026-005", "DIST-2026-006", "DIST-2026-002"]
     analysis_file: "claims/chains/open-source-de-darkener.md"
-    weakest_link: "Inference at scale may still centralize"
+    weakest_link: "DIST-2026-006 (inference centralization vs diffusion)"
 
 # Statistics
-# Total claims: 20
+# Total claims: 28
 # Total chains: 3
 # Last updated: 2026-01-18

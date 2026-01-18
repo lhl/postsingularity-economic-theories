@@ -12,19 +12,16 @@
 
 ```
 /reference/
-  20260117-geohotz-perpetualunderclass.md   # PRIMARY - Hotz blog post
-  20260118-geohotz-howtostop.md             # PRIMARY - Hotz follow-up
-  20260118-teortaxes.md                     # PRIMARY - Twitter thread
-  RESEARCH-gpt5.2pro-hottakes-analysis.md   # TRANSCRIPT - GPT analysis session
-  RESEARCH-gpt5.2pro-fiction-then-hottakes-analysis.md  # TRANSCRIPT - GPT session
+  primary/blogs/hotz-2026-three-minutes.md             # PRIMARY - Hotz blog post
+  primary/blogs/hotz-2026-how-stop.md                  # PRIMARY - Hotz follow-up
+  primary/social/teortaxes-2026-thread.md              # PRIMARY - Twitter thread
+  transcripts/gpt-2026-01-18-hottakes.md               # TRANSCRIPT - GPT analysis session
+  transcripts/gpt-2026-01-18-fiction-hottakes.md       # TRANSCRIPT - GPT session
   sources.yaml                              # Registry (partially populated)
 ```
 
 ### Problems
-1. Primary sources mixed with AI transcripts
-2. Inconsistent naming (`20260117-*` vs `RESEARCH-*`)
-3. No clear workflow tracking (what's processed vs pending)
-4. sources.yaml IDs don't match filenames
+1. No clear workflow tracking (what's processed vs pending)
 
 ---
 
@@ -144,15 +141,15 @@ Or simpler - just flat symlinks with prefix:
 
 ### Phase 1: Reorganize Files
 
-- [ ] Create new directory structure
-- [ ] Rename and move primary sources to `reference/primary/`
-  - `20260117-geohotz-perpetualunderclass.md` → `hotz-2026-three-minutes.md`
-  - `20260118-geohotz-howtostop.md` → `hotz-2026-how-stop.md`
-  - `20260118-teortaxes.md` → `teortaxes-2026-thread.md`
-- [ ] Rename and move transcripts to `reference/transcripts/`
-  - `RESEARCH-gpt5.2pro-hottakes-analysis.md` → `gpt-2026-01-18-hottakes.md`
-  - `RESEARCH-gpt5.2pro-fiction-then-hottakes-analysis.md` → `gpt-2026-01-18-fiction-hottakes.md`
-- [ ] Update sources.yaml with correct paths and IDs
+- [x] Create new directory structure
+- [x] Rename and move primary sources to `reference/primary/`
+  - `reference/20260117-geohotz-perpetualunderclass.md` → `reference/primary/blogs/hotz-2026-three-minutes.md`
+  - `reference/20260118-geohotz-howtostop.md` → `reference/primary/blogs/hotz-2026-how-stop.md`
+  - `reference/20260118-teortaxes.md` → `reference/primary/social/teortaxes-2026-thread.md`
+- [x] Rename and move transcripts to `reference/transcripts/`
+  - `reference/RESEARCH-gpt5.2pro-hottakes-analysis.md` → `reference/transcripts/gpt-2026-01-18-hottakes.md`
+  - `reference/RESEARCH-gpt5.2pro-fiction-then-hottakes-analysis.md` → `reference/transcripts/gpt-2026-01-18-fiction-hottakes.md`
+- [x] Update sources.yaml with correct IDs
 - [ ] Set up inbox/ with initial symlinks
 
 ### Phase 2: Process Existing Sources
