@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# Pre-commit hook: validates data integrity before allowing commits.
+# Enable with: git config core.hooksPath scripts/hooks
+#
+
+# Run validator from repo root
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT" || exit 1
+
+echo "Running data integrity validation..."
+python scripts/validate.py
+
+if [ $? -ne 0 ]; then
+    echo ""
+    echo "Commit blocked: validation errors found."
+    echo "Fix the errors above, then try again."
+    exit 1
+fi
+
+echo "Validation passed."

@@ -92,7 +92,13 @@ All analysis follows a **three-stage process**:
 │
 ├── docs/                  # Framework development (NOT research)
 │   ├── WORKFLOWS.md       # Operational procedures
+│   ├── SCHEMA.md          # Data file schemas
 │   └── PLAN-framework.md  # Development planning
+│
+├── scripts/               # Tooling
+│   ├── validate.py        # Data integrity validator
+│   └── hooks/             # Git hooks
+│       └── pre-commit     # Pre-commit validation
 │
 ├── inbox/                 # Work tracking (symlinks)
 │   ├── to-catalog/
@@ -105,15 +111,19 @@ All analysis follows a **three-stage process**:
 │   └── [source files]
 │
 ├── claims/                # Claim database
-│   └── registry.yaml
+│   ├── registry.yaml      # Master claim index
+│   └── chains/            # Detailed chain analyses
 │
 ├── analysis/              # Our analyses
 │   ├── sources/           # Individual source analyses
 │   ├── comparisons/       # Theory comparisons
 │   └── syntheses/         # Cross-source syntheses
 │
+├── scenarios/             # Scenario matrices
+│
 └── tracking/              # Predictions & indicators
-    └── predictions.md
+    ├── predictions.md
+    └── dashboards/        # Indicator dashboards
 ```
 
 ---
@@ -135,6 +145,19 @@ Plus 2 AI-assisted analysis transcripts.
 
 ## Using This Framework
 
+### Setup
+
+```bash
+# Clone the repo
+git clone https://github.com/lhl/postsingularity-economic-theories.git
+cd postsingularity-economic-theories
+
+# Enable pre-commit validation (recommended)
+git config core.hooksPath scripts/hooks
+```
+
+The pre-commit hook runs `scripts/validate.py` before each commit to ensure data integrity.
+
 ### To add a new source
 ```bash
 # 1. Add to reference/
@@ -145,6 +168,13 @@ ln -s ../reference/[file] inbox/to-analyze/
 
 ### To analyze a source
 See [docs/WORKFLOWS.md](docs/WORKFLOWS.md) for step-by-step procedures.
+
+### To validate data integrity
+```bash
+python scripts/validate.py          # Normal mode
+python scripts/validate.py --strict # Also check analysis_file paths exist
+python scripts/validate.py --json   # Machine-readable output
+```
 
 ### To query claims
 All claims are in `claims/registry.yaml` with:
@@ -162,14 +192,15 @@ This framework is actively evolving. Current status:
 - [x] Core 3-stage methodology
 - [x] Claim registry with IDs and relationships
 - [x] Source registry with back-links
-- [x] Argument chain notation
+- [x] Argument chain notation and detailed chain analyses
 - [x] Prediction tracking structure
 - [x] Workflow documentation
 - [x] Inbox system for work tracking
-- [ ] Scenario matrix templates (documented, not yet populated)
-- [ ] Indicator dashboards (documented, not yet populated)
+- [x] Scenario matrix (post-automation governance)
+- [x] Indicator dashboard (neofeudalism tracking)
+- [x] Automated cross-reference validation (`scripts/validate.py`)
+- [x] Pre-commit hook for data integrity
 - [ ] File reorganization (sources in legacy locations)
-- [ ] Automated cross-reference validation
 
 See [docs/PLAN-framework.md](docs/PLAN-framework.md) for development roadmap.
 
@@ -202,4 +233,4 @@ Analyses: Cite appropriately.
 
 ---
 
-*Last updated: 2026-01-18*
+*Last updated: 2026-01-19*
