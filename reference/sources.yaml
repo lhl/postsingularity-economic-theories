@@ -21,7 +21,7 @@ sources:
   #   domains: ["TECH", "RESOURCE"]
 
   # Conversational analyses
-  gpt-2026-hottakes-analysis:
+  gpt-2026-01-18-hottakes:
     type: "CONVO"
     title: "Post-Singularity Economics Hot Takes Analysis"
     author: ["lhl", "GPT-5.2-Pro"]
@@ -30,12 +30,19 @@ sources:
     accessed: "2026-01-18"
     reliability: 0.6  # Conversational, needs verification
     bias_notes: "Exploratory analysis session, claims need primary source verification"
-    claims_extracted: []  # TODO: Extract and register claims
-    analysis_file: "reference/RESEARCH-gpt5.2pro-hottakes-analysis.md"
+    claims_extracted:
+      - "TECH-2026-004"
+      - "DIST-2026-001"
+      - "DIST-2026-002"
+      - "GOV-2026-004"
+      - "GOV-2026-005"
+      - "GOV-2026-006"
+      - "GOV-2026-007"
+    analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
     topics: ["neofeudalism", "post-labor", "automation", "underclass", "multipolarity"]
     domains: ["LABOR", "DIST", "GOV", "TECH", "TRANS"]
 
-  gpt-2026-fiction-hottakes:
+  gpt-2026-01-18-fiction-hottakes:
     type: "CONVO"
     title: "Fiction Recommendations then Hot Takes Analysis"
     author: ["lhl", "GPT-5.2-Pro"]
@@ -44,8 +51,12 @@ sources:
     accessed: "2026-01-18"
     reliability: 0.6
     bias_notes: "Exploratory analysis session"
-    claims_extracted: []
-    analysis_file: "reference/RESEARCH-gpt5.2pro-fiction-then-hottakes-analysis.md"
+    claims_extracted:
+      - "TECH-2026-004"
+      - "DIST-2026-001"
+      - "DIST-2026-002"
+      - "GOV-2026-006"
+    analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
     topics: ["neofeudalism", "post-labor", "fiction", "alternatives"]
     domains: ["LABOR", "DIST", "SOCIAL"]
 
@@ -59,8 +70,9 @@ sources:
     accessed: "2026-01-18"
     reliability: 0.5
     bias_notes: "Individual opinion, provocative framing"
-    claims_extracted: []
-    analysis_file: ""
+    claims_extracted:
+      - "GOV-2026-001"
+    analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
     topics: ["neofeudalism", "tech-work", "participation"]
     domains: ["LABOR", "DIST", "SOCIAL"]
 
@@ -73,12 +85,77 @@ sources:
     accessed: "2026-01-18"
     reliability: 0.5
     bias_notes: "Follow-up to three-minutes, more operational"
-    claims_extracted: []
-    analysis_file: ""
+    claims_extracted: []  # Claims extracted via synthesis, not direct analysis
+    analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
     topics: ["open-source", "ownership", "alternatives"]
     domains: ["TECH", "DIST"]
 
+  teortaxes-2026-thread:
+    type: "SOCIAL"
+    title: "Post-labor permanent underclass Twitter thread"
+    author: ["@teortaxesTex"]
+    year: 2026
+    url: ""  # Twitter thread, embedded in RESEARCH files
+    accessed: "2026-01-18"
+    reliability: 0.4
+    bias_notes: "Twitter thread, provocative framing, some claims unfalsifiable"
+    claims_extracted:
+      - "TECH-2026-003"
+      - "LABOR-2026-002"
+      - "DIST-2026-003"
+      - "GOV-2026-003"
+    analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
+    topics: ["post-labor", "automation", "permanent-underclass", "timeline"]
+    domains: ["LABOR", "DIST", "GOV", "TECH"]
+
+  xenoimpulse-2026-thread:
+    type: "SOCIAL"
+    title: "Genocide > UBI nihilistic thread"
+    author: ["@Xenoimpulse"]
+    year: 2026
+    url: "https://threadreaderapp.com/thread/2012723101835145461.html"
+    accessed: "2026-01-18"
+    reliability: 0.3
+    bias_notes: "Extreme nihilistic framing, multiple weak premises"
+    claims_extracted:
+      - "GOV-2026-002"
+    analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
+    topics: ["genocide", "ubi", "coercion", "elite-coordination"]
+    domains: ["GOV", "DIST"]
+
+  # External sources cited in analysis (not directly analyzed, referenced for evidence)
+  epoch-2024-training-costs:
+    type: "REPORT"
+    title: "How Much Does It Cost to Train Frontier AI Models?"
+    author: ["Epoch AI"]
+    year: 2024
+    url: "https://epoch.ai/blog/how-much-does-it-cost-to-train-frontier-ai-models"
+    accessed: "2026-01-18"
+    reliability: 0.8
+    bias_notes: "Pro-AI-progress framing but methodologically careful"
+    claims_extracted:
+      - "TECH-2026-001"
+      - "TECH-2026-002"
+    analysis_file: ""  # Cited, not directly analyzed
+    topics: ["compute", "costs", "frontier-models"]
+    domains: ["TECH", "RESOURCE"]
+
+  iea-2024-energy-ai:
+    type: "REPORT"
+    title: "Energy and AI: Energy Supply for AI"
+    author: ["IEA"]
+    year: 2024
+    url: "https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai"
+    accessed: "2026-01-18"
+    reliability: 0.85
+    bias_notes: "Institutional source, generally credible on energy data"
+    claims_extracted:
+      - "RESOURCE-2026-001"
+    analysis_file: ""
+    topics: ["energy", "datacenters", "electricity"]
+    domains: ["RESOURCE", "TECH"]
+
 # Statistics
-# Total sources: 4
-# By type: CONVO: 2, BLOG: 2
+# Total sources: 8
+# By type: CONVO: 2, BLOG: 2, SOCIAL: 2, REPORT: 2
 # Last updated: 2026-01-18

@@ -34,6 +34,16 @@ When making significant framework changes, increment version and document:
 - **No bylines or co-author footers in commit messages** - keep them clean and descriptive
 - Use conventional commit style when appropriate (feat:, fix:, docs:, refactor:)
 
+### Data Integrity Rules
+Cross-linking must be maintained:
+1. **Claim → Source**: Every claim in registry.yaml must have valid `source_ids`
+2. **Source → Claims**: Every source in sources.yaml must list its `claims_extracted`
+3. **Prediction → Claim**: Every entry in predictions.md must reference a claim ID
+4. **Chain → Claims**: Every chain must list its constituent claim IDs
+5. **Analysis → Source**: Every analysis doc must reference its source ID
+
+When creating claims, update both directions of the link in the same commit.
+
 ---
 
 ## Analytical Methodology
@@ -649,23 +659,29 @@ For comparing multiple theories on a topic:
 
 ```
 /
-├── AGENTS.md              # This file (symlinked to CLAUDE.md)
+├── AGENTS.md              # Framework & methodology (symlinked to CLAUDE.md)
+├── WORKFLOWS.md           # Operational procedures - how to do things
+├── PLAN-framework.md      # Active development planning
 ├── README.md              # Project overview
+│
+├── inbox/                 # Work tracking via symlinks
+│   ├── to-catalog/        # New sources not yet in sources.yaml
+│   ├── to-analyze/        # Cataloged sources awaiting analysis
+│   ├── in-progress/       # Currently being worked on
+│   └── needs-update/      # Existing analyses flagged for re-evaluation
 │
 ├── reference/             # Original source documents + registry
 │   ├── sources.yaml       # Master source bibliography
-│   ├── papers/
-│   ├── books/
-│   ├── articles/
-│   ├── conversations/     # AI-assisted analysis transcripts
+│   ├── primary/           # Raw source materials
+│   │   ├── papers/
+│   │   ├── blogs/
+│   │   └── social/
+│   ├── transcripts/       # AI-assisted analysis transcripts
 │   └── data/
 │
 ├── claims/                # Claim registry
 │   ├── registry.yaml      # Master claim index
 │   ├── by-domain/         # Claims organized by domain
-│   │   ├── TECH.md
-│   │   ├── LABOR.md
-│   │   └── ...
 │   └── chains/            # Argument chain analyses
 │
 ├── analysis/              # Completed analyses
@@ -682,6 +698,8 @@ For comparing multiple theories on a topic:
 │
 └── frameworks/            # Theoretical frameworks and taxonomies
 ```
+
+See [WORKFLOWS.md](WORKFLOWS.md) for step-by-step operational procedures.
 
 ---
 
@@ -708,6 +726,8 @@ For comparing multiple theories on a topic:
 4. Synthesize at end: what's worth registering?
 5. Assign lower initial confidence to conversational claims
 6. Flag for verification against primary sources
+7. **Back-link**: Update source's `claims_extracted` field in sources.yaml
+8. **Prediction promotion**: Any `[P]` type claim must also get entry in `tracking/predictions.md`
 
 ### When Searching for Supporting/Counterfactual Evidence
 1. Clearly state the claim being investigated (with claim ID)
