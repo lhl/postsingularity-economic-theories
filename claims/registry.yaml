@@ -80,12 +80,13 @@ claims:
     first_extracted: "2026-01-18"
     extracted_by: "claude"
     supports: ["DIST-2026-004", "GOV-2026-006"]
-    contradicts: ["teortaxes-cognitive-monopoly"]
+    contradicts: []
     depends_on: []
     modified_by: []
     part_of_chain: "CHAIN-2026-003"
-    version: 1
+    version: 2
     last_updated: "2026-01-18"
+    notes: "Contradicts @teortaxesTex thesis that only billionaires will afford AI cognition"
 
   # === RESOURCE Domain ===
 
@@ -152,13 +153,13 @@ claims:
     first_extracted: "2026-01-18"
     extracted_by: "claude"
     supports: []
-    contradicts: ["acemoglu-restrepo-tasks"]
+    contradicts: []
     depends_on: []
     modified_by: []
     part_of_chain: "CHAIN-2026-001"
-    version: 1
+    version: 2
     last_updated: "2026-01-18"
-    notes: "Timeline speculative; 'full' undefined; ignores task recomposition"
+    notes: "Timeline speculative; 'full' undefined; ignores task recomposition per Acemoglu-Restrepo (2019)"
 
   # === VALUE Domain ===
 
@@ -262,13 +263,13 @@ claims:
     first_extracted: "2026-01-18"
     extracted_by: "claude"
     supports: []
-    contradicts: ["equity-escape-thesis"]
+    contradicts: []
     depends_on: []
     modified_by: []
     part_of_chain: ""
-    version: 1
+    version: 2
     last_updated: "2026-01-18"
-    notes: "Contradicts teortaxesTex equity escape advice"
+    notes: "Contradicts @teortaxesTex 'equity escape' thesis (convert wealth to dividends to survive)"
 
   GOV-2026-002:
     text: "Elites will choose genocide over UBI once labor is unnecessary"
@@ -363,7 +364,7 @@ claims:
     domain: "GOV"
     evidence_level: "E4"
     confidence: 0.55
-    source_ids: ["japan-ai-act", "eu-ai-act", "gpt-2026-01-18-hottakes"]
+    source_ids: ["japan-ai-guidelines-2025", "eu-ai-act", "gpt-2026-01-18-hottakes"]
     first_extracted: "2026-01-18"
     extracted_by: "claude"
     supports: []
@@ -371,7 +372,7 @@ claims:
     depends_on: []
     modified_by: []
     part_of_chain: ""
-    version: 1
+    version: 2
     last_updated: "2026-01-18"
 
 # Argument chains index

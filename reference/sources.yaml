@@ -155,7 +155,152 @@ sources:
     topics: ["energy", "datacenters", "electricity"]
     domains: ["RESOURCE", "TECH"]
 
+  # Additional cited sources (stub entries for integrity)
+  deepseek-r1:
+    type: "PAPER"
+    title: "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
+    author: ["DeepSeek AI"]
+    year: 2025
+    url: "https://arxiv.org/abs/2501.12948"
+    accessed: "2026-01-18"
+    reliability: 0.7
+    bias_notes: "Industry research paper"
+    claims_extracted:
+      - "TECH-2026-004"
+    analysis_file: ""
+    topics: ["reasoning", "llm", "open-models"]
+    domains: ["TECH"]
+    status: "cataloged"
+
+  chm-alexnet:
+    type: "ARTICLE"
+    title: "CHM Releases AlexNet Source Code"
+    author: ["Computer History Museum"]
+    year: 2024
+    url: "https://computerhistory.org/blog/chm-releases-alexnet-source-code/"
+    accessed: "2026-01-18"
+    reliability: 0.9
+    bias_notes: "Historical documentation"
+    claims_extracted:
+      - "TECH-2026-003"
+    analysis_file: ""
+    topics: ["alexnet", "deep-learning", "history"]
+    domains: ["TECH"]
+    status: "cataloged"
+
+  reuters-rio-tinto-amazon:
+    type: "ARTICLE"
+    title: "Rio Tinto to supply copper to Amazon for AI data centers"
+    author: ["Reuters"]
+    year: 2026
+    url: "https://www.reuters.com/business/rio-tinto-supply-copper-amazon-ai-data-centers-2026-01-15/"
+    accessed: "2026-01-18"
+    reliability: 0.85
+    bias_notes: "News wire, factual reporting"
+    claims_extracted:
+      - "RESOURCE-2026-002"
+    analysis_file: ""
+    topics: ["copper", "supply-chain", "vertical-integration"]
+    domains: ["RESOURCE", "TECH"]
+    status: "cataloged"
+
+  japan-ai-guidelines-2025:
+    type: "REPORT"
+    title: "Guideline for Japanese Governments' Procurements and Utilizations of Generative AI"
+    author: ["Digital Agency of Japan"]
+    year: 2025
+    url: "https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/e2a06143-ed29-4f1d-9c31-0f06fca67afc/6e45a64f/20250527_resources_standard_guidelines_guideline_04.pdf"
+    accessed: "2026-01-18"
+    reliability: 0.8
+    bias_notes: "Government guidance document"
+    claims_extracted:
+      - "GOV-2026-007"
+    analysis_file: ""
+    topics: ["japan", "ai-governance", "regulation"]
+    domains: ["GOV", "TECH"]
+    status: "cataloged"
+
+  eu-ai-act:
+    type: "REPORT"
+    title: "AI Act - Regulatory Framework for AI"
+    author: ["European Commission"]
+    year: 2024
+    url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+    accessed: "2026-01-18"
+    reliability: 0.85
+    bias_notes: "Official EU regulatory framework"
+    claims_extracted:
+      - "GOV-2026-007"
+    analysis_file: ""
+    topics: ["eu", "ai-governance", "regulation"]
+    domains: ["GOV", "TECH"]
+    status: "cataloged"
+
+  acemoglu-restrepo-2019-tasks:
+    type: "PAPER"
+    title: "Automation and New Tasks: How Technology Displaces and Reinstates Labor"
+    author: ["Daron Acemoglu", "Pascual Restrepo"]
+    year: 2019
+    url: "https://www.aeaweb.org/articles?id=10.1257/jep.33.2.3"
+    accessed: "2026-01-18"
+    reliability: 0.85
+    bias_notes: "Peer-reviewed academic economics"
+    claims_extracted: []  # Referenced as counterargument, not directly extracted
+    analysis_file: ""
+    topics: ["automation", "labor", "tasks", "economics"]
+    domains: ["LABOR", "TECH"]
+    status: "cataloged"
+
+  # Background knowledge (stub entries for standard references)
+  standard-economics:
+    type: "KNOWLEDGE"
+    title: "Standard economic theory (factor shares, labor economics)"
+    author: ["Background Knowledge"]
+    year: 0
+    url: ""
+    accessed: "2026-01-18"
+    reliability: 0.8
+    bias_notes: "Represents mainstream economic consensus on labor/capital dynamics"
+    claims_extracted:
+      - "LABOR-2026-001"
+    analysis_file: ""
+    topics: ["economics", "labor", "capital"]
+    domains: ["LABOR", "VALUE"]
+    status: "cataloged"
+
+  macro-identity:
+    type: "KNOWLEDGE"
+    title: "Macroeconomic accounting identities (demand = income)"
+    author: ["Background Knowledge"]
+    year: 0
+    url: ""
+    accessed: "2026-01-18"
+    reliability: 0.9
+    bias_notes: "Definitional/accounting identity, not contested"
+    claims_extracted:
+      - "VALUE-2026-001"
+    analysis_file: ""
+    topics: ["macroeconomics", "demand", "income"]
+    domains: ["VALUE"]
+    status: "cataloged"
+
+  historical-pattern:
+    type: "KNOWLEDGE"
+    title: "Historical pattern of technology diffusion and commoditization"
+    author: ["Background Knowledge"]
+    year: 0
+    url: ""
+    accessed: "2026-01-18"
+    reliability: 0.7
+    bias_notes: "General historical pattern, specific instances vary"
+    claims_extracted:
+      - "DIST-2026-004"
+    analysis_file: ""
+    topics: ["technology", "diffusion", "history"]
+    domains: ["TECH", "DIST"]
+    status: "cataloged"
+
 # Statistics
-# Total sources: 8
-# By type: CONVO: 2, BLOG: 2, SOCIAL: 2, REPORT: 2
+# Total sources: 17
+# By type: CONVO: 2, BLOG: 2, SOCIAL: 2, REPORT: 4, PAPER: 2, ARTICLE: 2, KNOWLEDGE: 3
 # Last updated: 2026-01-18
