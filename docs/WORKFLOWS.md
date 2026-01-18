@@ -444,6 +444,7 @@ At end of work session:
 - [ ] All new claims have IDs and are in registry
 - [ ] All sources have `claims_extracted` updated
 - [ ] All `[P]` predictions are in predictions.md
+- [ ] Run `python scripts/validate.py` and fix any errors
 - [ ] Inbox reflects current state
 - [ ] Changes committed and pushed
 - [ ] AGENTS.md updated if process improved

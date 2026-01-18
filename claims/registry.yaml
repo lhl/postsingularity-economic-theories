@@ -76,7 +76,7 @@ claims:
     domain: "TECH"
     evidence_level: "E2"
     confidence: 0.75
-    source_ids: ["deepseek-r1", "gpt-2026-01-18-hottakes"]
+    source_ids: ["deepseek-r1", "gpt-2026-01-18-hottakes", "gpt-2026-01-18-fiction-hottakes"]
     first_extracted: "2026-01-18"
     extracted_by: "claude"
     supports: ["DIST-2026-004", "GOV-2026-006"]

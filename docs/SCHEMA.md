@@ -257,6 +257,8 @@ Predictions are tracked in a Markdown file with structured sections.
 
 These rules should be enforced (manually or by validator):
 
+Run validator: `python scripts/validate.py` (add `--strict` to fail on missing `analysis_file` paths).
+
 1. **Claim source_ids**: Every ID in a claim's `source_ids` must exist in `sources.yaml`
 2. **Claim relationships**: `supports`, `contradicts`, `depends_on`, `modified_by` must only contain claim IDs that exist in registry
 3. **Prediction sync**: Every claim with `type: "[P]"` must have entry in `predictions.md`
