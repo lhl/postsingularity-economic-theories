@@ -12,7 +12,7 @@ counters:
   SOCIAL: 0
   RESOURCE: 3
   TRANS: 2
-  META: 0
+  META: 5
 
 # Claims index
 claims:
@@ -638,6 +638,97 @@ claims:
     version: 1
     last_updated: "2026-01-18"
 
+  # === META Domain ===
+
+  META-2026-001:
+    text: "Structured claim extraction with IDs enables cross-referencing that ad-hoc analysis cannot"
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    confidence: 0.85
+    source_ids: ["claude-2026-01-19-framework-efficacy"]
+    first_extracted: "2026-01-19"
+    extracted_by: "claude"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+    notes: "Demonstrated by comparing framework vs raw analysis of same source"
+
+  META-2026-002:
+    text: "Explicit confidence calibration (0-1) produces more tractable outputs than qualitative language"
+    type: "[T]"
+    domain: "META"
+    evidence_level: "E3"
+    confidence: 0.70
+    source_ids: ["claude-2026-01-19-framework-efficacy"]
+    first_extracted: "2026-01-19"
+    extracted_by: "claude"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
+  META-2026-003:
+    text: "Framework under-prompts for fact-checking, reducing verification rigor compared to unconstrained analysis"
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    confidence: 0.80
+    source_ids: ["claude-2026-01-19-framework-efficacy"]
+    first_extracted: "2026-01-19"
+    extracted_by: "claude"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+    notes: "Raw analysis had 16 sourced citations; framework analysis had 0"
+
+  META-2026-004:
+    text: "Framework under-prompts for rhetorical/persuasion analysis"
+    type: "[F]"
+    domain: "META"
+    evidence_level: "E2"
+    confidence: 0.80
+    source_ids: ["claude-2026-01-19-framework-efficacy"]
+    first_extracted: "2026-01-19"
+    extracted_by: "claude"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+    notes: "Raw analysis identified 5 persuasion techniques; framework noted 'heavily narrativized' only"
+
+  META-2026-005:
+    text: "Framework analysis and raw analysis are complementary; optimal workflow may combine both approaches"
+    type: "[H]"
+    domain: "META"
+    evidence_level: "E4"
+    confidence: 0.65
+    source_ids: ["claude-2026-01-19-framework-efficacy"]
+    first_extracted: "2026-01-19"
+    extracted_by: "claude"
+    supports: []
+    contradicts: []
+    depends_on: ["META-2026-001", "META-2026-003", "META-2026-004"]
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+    notes: "Framework adds tractability; raw adds depth. Two-pass workflow proposed."
+
 # Argument chains index
 chains:
 
@@ -666,6 +757,6 @@ chains:
     weakest_link: "DIST-2026-006 (inference centralization vs diffusion)"
 
 # Statistics
-# Total claims: 35
+# Total claims: 40
 # Total chains: 3
-# Last updated: 2026-01-18
+# Last updated: 2026-01-19

@@ -407,7 +407,65 @@ sources:
     domains: ["TECH", "DIST"]
     status: "cataloged"
 
+  # Greenland Endgame analysis sources
+  teortaxes-2026-greenland-endgame:
+    type: "SOCIAL"
+    title: "Greenland/resource extraction + 'light cone' endgame post"
+    author: ["@teortaxesTex"]
+    year: 2026
+    url: "https://x.com/teortaxesTex/status/2012127205728440495"
+    accessed: "2026-01-19"
+    reliability: 0.3
+    bias_notes: "Provocative framing; 'heavily narrativized'; mixes plausible geopolitics with speculative longtermist motives"
+    claims_extracted:
+      - "TRANS-2026-001"
+      - "TRANS-2026-002"
+      - "GOV-2026-012"
+      - "GOV-2026-013"
+      - "GOV-2026-014"
+      - "GOV-2026-015"
+      - "RESOURCE-2026-003"
+    analysis_file: "analysis/sources/teortaxes-2026-greenland-endgame.md"
+    topics: ["greenland", "resource-extraction", "longtermism", "light-cone", "geopolitics", "europe"]
+    domains: ["GOV", "TRANS", "RESOURCE"]
+    status: "analyzed"
+
+  gpt-2026-01-19-greenland-endgame:
+    type: "CONVO"
+    title: "Raw critical analysis of Greenland Endgame thread (no framework)"
+    author: ["lhl", "GPT-5.2-Pro"]
+    year: 2026
+    url: "https://chatgpt.com/c/696d1df5-91a0-8324-9137-9644a9f2e779"
+    accessed: "2026-01-19"
+    reliability: 0.7
+    bias_notes: "Thorough fact-checking; used as baseline for framework comparison"
+    claims_extracted: []  # Raw analysis, claims not extracted to registry
+    analysis_file: ""
+    topics: ["greenland", "critical-analysis", "fact-checking", "framework-comparison"]
+    domains: ["META"]
+    status: "cataloged"
+
+  claude-2026-01-19-framework-efficacy:
+    type: "CONVO"
+    title: "Meta-Analysis: Framework Efficacy Test (Greenland Endgame)"
+    author: ["lhl", "Claude Opus 4.5"]
+    year: 2026
+    url: ""
+    accessed: "2026-01-19"
+    reliability: 0.7
+    bias_notes: "Reflexive analysis of our own framework; potential confirmation bias mitigated by explicit gap identification"
+    claims_extracted:
+      - "META-2026-001"
+      - "META-2026-002"
+      - "META-2026-003"
+      - "META-2026-004"
+      - "META-2026-005"
+    analysis_file: "analysis/meta/framework-efficacy-greenland-test.md"
+    topics: ["meta-analysis", "framework-evaluation", "methodology", "workflow"]
+    domains: ["META"]
+    status: "analyzed"
+
 # Statistics
-# Total sources: 23
-# By type: CONVO: 2, BLOG: 2, SOCIAL: 3, REPORT: 6, PAPER: 3, ARTICLE: 3, BOOK: 1, KNOWLEDGE: 3
-# Last updated: 2026-01-18
+# Total sources: 26
+# By type: CONVO: 4, BLOG: 2, SOCIAL: 4, REPORT: 6, PAPER: 3, ARTICLE: 3, BOOK: 1, KNOWLEDGE: 3
+# Last updated: 2026-01-19
