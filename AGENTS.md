@@ -25,6 +25,15 @@ When making significant framework changes, increment version and document:
 - Why it changed
 - Migration notes for existing analyses
 
+### Continuous Improvement
+**Update this AGENTS.md aggressively** as we refine our process. This document should always reflect current best practices. When you discover a better way to do something, document it here immediately.
+
+### Git Practices
+- Commit frequently as work progresses
+- Push to remote regularly
+- **No bylines or co-author footers in commit messages** - keep them clean and descriptive
+- Use conventional commit style when appropriate (feat:, fix:, docs:, refactor:)
+
 ---
 
 ## Analytical Methodology

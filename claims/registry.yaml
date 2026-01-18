@@ -4,51 +4,404 @@
 
 # Counter tracking (for generating sequential IDs)
 counters:
-  LABOR: 0
-  VALUE: 0
-  DIST: 0
-  GOV: 0
-  TECH: 0
+  LABOR: 2
+  VALUE: 1
+  DIST: 4
+  GOV: 7
+  TECH: 4
   SOCIAL: 0
-  RESOURCE: 0
+  RESOURCE: 2
   TRANS: 0
   META: 0
 
 # Claims index
-# Full claim details in by-domain/ files; this is the master lookup
+claims:
 
-claims: {}
+  # === TECH Domain ===
 
-# Example claim entry (for reference):
-# TECH-2026-001:
-#   text: "Frontier AI training costs grow 2-3x annually"
-#   type: "[F]"
-#   domain: "TECH"
-#   evidence_level: "E2"
-#   confidence: 0.75
-#   source_ids: ["epoch-2024-training-costs"]
-#   first_extracted: "2026-01-18"
-#   extracted_by: "claude"
-#   supports: []
-#   contradicts: []
-#   depends_on: []
-#   modified_by: []
-#   part_of_chain: ""
-#   version: 1
-#   last_updated: "2026-01-18"
+  TECH-2026-001:
+    text: "Frontier AI training costs grow 2-3x annually"
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    confidence: 0.80
+    source_ids: ["epoch-2024-training-costs"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["DIST-2026-001"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  TECH-2026-002:
+    text: "Largest training runs could exceed $1B by ~2027"
+    type: "[P]"
+    domain: "TECH"
+    evidence_level: "E4"
+    confidence: 0.65
+    source_ids: ["epoch-2024-training-costs"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["DIST-2026-001"]
+    contradicts: []
+    depends_on: ["TECH-2026-001"]
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  TECH-2026-003:
+    text: "AlexNet (2012) was inflection point for current AI paradigm"
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E1"
+    confidence: 0.95
+    source_ids: ["chm-alexnet", "teortaxes-2026-thread"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  TECH-2026-004:
+    text: "Open models within ~6 months of frontier on many capabilities"
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    confidence: 0.75
+    source_ids: ["deepseek-r1", "gpt-2026-01-18-hottakes"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["DIST-2026-004", "GOV-2026-006"]
+    contradicts: ["teortaxes-cognitive-monopoly"]
+    depends_on: []
+    modified_by: []
+    part_of_chain: "CHAIN-2026-003"
+    version: 1
+    last_updated: "2026-01-18"
+
+  # === RESOURCE Domain ===
+
+  RESOURCE-2026-001:
+    text: "Data center electricity demand: 460 TWh (2024) → 1,000+ TWh (2030) → 1,300 TWh (2035)"
+    type: "[F]"
+    domain: "RESOURCE"
+    evidence_level: "E1"
+    confidence: 0.85
+    source_ids: ["iea-2024-energy-ai"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["DIST-2026-001"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  RESOURCE-2026-002:
+    text: "Hyperscalers vertically integrating into raw materials (copper, power contracts)"
+    type: "[F]"
+    domain: "RESOURCE"
+    evidence_level: "E2"
+    confidence: 0.80
+    source_ids: ["reuters-rio-tinto-amazon"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["DIST-2026-001"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  # === LABOR Domain ===
+
+  LABOR-2026-001:
+    text: "If AI substitutes human labor in most tasks, wages fall and capital share rises"
+    type: "[T]"
+    domain: "LABOR"
+    evidence_level: "E3"
+    confidence: 0.85
+    source_ids: ["standard-economics"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: "CHAIN-2026-001"
+    version: 1
+    last_updated: "2026-01-18"
+
+  LABOR-2026-002:
+    text: "Full automation of human labor by 2035-2045"
+    type: "[P]"
+    domain: "LABOR"
+    evidence_level: "E5"
+    confidence: 0.35
+    source_ids: ["teortaxes-2026-thread"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: ["acemoglu-restrepo-tasks"]
+    depends_on: []
+    modified_by: []
+    part_of_chain: "CHAIN-2026-001"
+    version: 1
+    last_updated: "2026-01-18"
+    notes: "Timeline speculative; 'full' undefined; ignores task recomposition"
+
+  # === VALUE Domain ===
+
+  VALUE-2026-001:
+    text: "Post-labor requires some income distribution mechanism or consumption collapses"
+    type: "[T]"
+    domain: "VALUE"
+    evidence_level: "E3"
+    confidence: 0.80
+    source_ids: ["macro-identity"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: ["GOV-2026-004"]
+    contradicts: ["DIST-2026-003"]
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  # === DIST Domain ===
+
+  DIST-2026-001:
+    text: "Compute + energy + chips becoming primary chokepoints for economic power"
+    type: "[T]"
+    domain: "DIST"
+    evidence_level: "E3"
+    confidence: 0.75
+    source_ids: ["gpt-2026-01-18-hottakes", "gpt-2026-01-18-fiction-hottakes"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: []
+    depends_on: ["TECH-2026-001", "RESOURCE-2026-001"]
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  DIST-2026-002:
+    text: "Bottleneck control, not model access, determines 'feudal' vs 'abundance' outcomes"
+    type: "[T]"
+    domain: "DIST"
+    evidence_level: "E4"
+    confidence: 0.70
+    source_ids: ["gpt-2026-01-18-hottakes", "gpt-2026-01-18-fiction-hottakes"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: []
+    depends_on: ["DIST-2026-001", "TECH-2026-004"]
+    modified_by: []
+    part_of_chain: "CHAIN-2026-003"
+    version: 1
+    last_updated: "2026-01-18"
+
+  DIST-2026-003:
+    text: "Post-labor → permanent underclass is 'default' outcome"
+    type: "[P]"
+    domain: "DIST"
+    evidence_level: "E5"
+    confidence: 0.30
+    source_ids: ["teortaxes-2026-thread"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: ["VALUE-2026-001", "GOV-2026-004"]
+    depends_on: ["LABOR-2026-002"]
+    modified_by: []
+    part_of_chain: "CHAIN-2026-001"
+    version: 1
+    last_updated: "2026-01-18"
+    notes: "Assumes no redistribution; politically contestable"
+
+  DIST-2026-004:
+    text: "Technology diffusion + commoditization historically breaks concentration"
+    type: "[T]"
+    domain: "DIST"
+    evidence_level: "E2"
+    confidence: 0.70
+    source_ids: ["historical-pattern"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: ["DIST-2026-003"]
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  # === GOV Domain ===
+
+  GOV-2026-001:
+    text: "Property rights will become arbitrary/confiscatable in neofeudal regime"
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E6"
+    confidence: 0.25
+    source_ids: ["hotz-2026-three-minutes"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: ["equity-escape-thesis"]
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+    notes: "Contradicts teortaxesTex equity escape advice"
+
+  GOV-2026-002:
+    text: "Elites will choose genocide over UBI once labor is unnecessary"
+    type: "[S]"
+    domain: "GOV"
+    evidence_level: "E6"
+    confidence: 0.10
+    source_ids: ["xenoimpulse-2026-thread"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: ["GOV-2026-004", "GOV-2026-005"]
+    depends_on: ["LABOR-2026-002"]
+    modified_by: []
+    part_of_chain: "CHAIN-2026-002"
+    version: 1
+    last_updated: "2026-01-18"
+    notes: "Multiple weak premises; ignores cheaper alternatives; coordination nightmare"
+
+  GOV-2026-003:
+    text: "US elites 'ahead of curve' and coordinating on post-labor strategy"
+    type: "[S]"
+    domain: "GOV"
+    evidence_level: "E6"
+    confidence: 0.20
+    source_ids: ["teortaxes-2026-thread"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+    notes: "Unfalsifiable"
+
+  GOV-2026-004:
+    text: "Buying stability often cheaper than enforcing it in high-automation world"
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E3"
+    confidence: 0.65
+    source_ids: ["gpt-2026-01-18-hottakes"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: ["GOV-2026-002", "DIST-2026-003"]
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  GOV-2026-005:
+    text: "Inter-elite + interstate competition prevents unified oligarchic coalition"
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E3"
+    confidence: 0.70
+    source_ids: ["gpt-2026-01-18-hottakes"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: ["GOV-2026-002", "GOV-2026-003"]
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  GOV-2026-006:
+    text: "Multipolarity reduces single-coalition doom but increases security competition"
+    type: "[T]"
+    domain: "GOV"
+    evidence_level: "E4"
+    confidence: 0.65
+    source_ids: ["gpt-2026-01-18-hottakes", "gpt-2026-01-18-fiction-hottakes"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
+
+  GOV-2026-007:
+    text: "Japan/EU governance styles suggest 'civilized equilibrium' paths exist"
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E4"
+    confidence: 0.55
+    source_ids: ["japan-ai-act", "eu-ai-act", "gpt-2026-01-18-hottakes"]
+    first_extracted: "2026-01-18"
+    extracted_by: "claude"
+    supports: []
+    contradicts: ["DIST-2026-003"]
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-18"
 
 # Argument chains index
-chains: {}
+chains:
 
-# Example chain entry:
-# CHAIN-2026-001:
-#   name: "Permanent Underclass"
-#   thesis: "Post-labor economy leads to permanent underclass by default"
-#   confidence: 0.35
-#   claims: ["LABOR-2026-001", "DIST-2026-001", "DIST-2026-002"]
-#   analysis_file: "claims/chains/permanent-underclass.md"
+  CHAIN-2026-001:
+    name: "Permanent Underclass"
+    thesis: "Post-labor economy leads to permanent underclass by default"
+    confidence: 0.30
+    claims: ["LABOR-2026-002", "LABOR-2026-001", "DIST-2026-003"]
+    analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
+    weakest_link: "Labor irrelevant → no income (assumes no redistribution)"
+
+  CHAIN-2026-002:
+    name: "Genocide Default"
+    thesis: "Elites will choose genocide over UBI"
+    confidence: 0.10
+    claims: ["LABOR-2026-002", "GOV-2026-002"]
+    analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
+    weakest_link: "Elite coordination (Step D)"
+
+  CHAIN-2026-003:
+    name: "Open Source De-Darkener"
+    thesis: "Open model diffusion shifts power struggle from cognition to infrastructure"
+    confidence: 0.60
+    claims: ["TECH-2026-004", "DIST-2026-002"]
+    analysis_file: "analysis/syntheses/neofeudalism-discourse-synthesis.md"
+    weakest_link: "Inference at scale may still centralize"
 
 # Statistics
-# Total claims: 0
-# Total chains: 0
+# Total claims: 20
+# Total chains: 3
 # Last updated: 2026-01-18
