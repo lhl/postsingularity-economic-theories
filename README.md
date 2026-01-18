@@ -20,11 +20,12 @@ The framework is itself under development—we refine it as we encounter new typ
 | Document | Status | Summary |
 |----------|--------|---------|
 | [Neofeudalism Discourse Synthesis](analysis/syntheses/neofeudalism-discourse-synthesis.md) | `[DRAFT]` | Synthesis of Jan 2026 Twitter discourse on post-labor economics, permanent underclass thesis, and counter-arguments |
-| [Greenland “Endgame” Post Analysis](analysis/sources/teortaxes-2026-greenland-endgame.md) | `[DRAFT]` | 3-stage analysis of a Greenland/resource-extraction + “light cone” endgame narrative; extracts GOV/RESOURCE/TRANS claims |
+| [Greenland "Endgame" Post Analysis](analysis/sources/teortaxes-2026-greenland-endgame.md) | `[DRAFT]` | 3-stage analysis of a Greenland/resource-extraction + "light cone" endgame narrative; extracts GOV/RESOURCE/TRANS claims |
+| [Framework Efficacy Meta-Analysis](analysis/meta/framework-efficacy-greenland-test.md) | `[REVIEWED]` | Compares framework-guided vs raw analysis; identifies framework gaps (fact-checking, rhetoric, internal tensions); proposes template improvements |
 
 ### Claims Registered
 
-**35 claims** across 7 domains, with **3 argument chains** mapped:
+**43 claims** across 8 domains, with **3 argument chains** mapped:
 
 | Chain | Thesis | Confidence |
 |-------|--------|------------|
@@ -118,7 +119,8 @@ All analysis follows a **three-stage process**:
 ├── analysis/              # Our analyses
 │   ├── sources/           # Individual source analyses
 │   ├── comparisons/       # Theory comparisons
-│   └── syntheses/         # Cross-source syntheses
+│   ├── syntheses/         # Cross-source syntheses
+│   └── meta/              # Framework evaluation/reflexive analysis
 │
 ├── scenarios/             # Scenario matrices
 │
@@ -141,7 +143,7 @@ All analysis follows a **three-stage process**:
 | [Training Costs Report](https://epoch.ai/blog/how-much-does-it-cost-to-train-frontier-ai-models) | Epoch AI | Report | 0.8 |
 | [Energy and AI](https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai) | IEA | Report | 0.85 |
 
-Plus 2 AI-assisted analysis transcripts.
+Plus 5 AI-assisted analysis transcripts (including framework comparison meta-analyses).
 
 ---
 
