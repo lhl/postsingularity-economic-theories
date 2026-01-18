@@ -660,9 +660,11 @@ For comparing multiple theories on a topic:
 ```
 /
 ├── AGENTS.md              # Framework & methodology (symlinked to CLAUDE.md)
-├── WORKFLOWS.md           # Operational procedures - how to do things
-├── PLAN-framework.md      # Active development planning
 ├── README.md              # Project overview
+│
+├── docs/                  # Framework development docs (NOT research output)
+│   ├── WORKFLOWS.md       # Operational procedures - how to do things
+│   └── PLAN-framework.md  # Active development planning
 │
 ├── inbox/                 # Work tracking via symlinks
 │   ├── to-catalog/        # New sources not yet in sources.yaml
@@ -699,7 +701,15 @@ For comparing multiple theories on a topic:
 └── frameworks/            # Theoretical frameworks and taxonomies
 ```
 
-See [WORKFLOWS.md](WORKFLOWS.md) for step-by-step operational procedures.
+See [docs/WORKFLOWS.md](docs/WORKFLOWS.md) for step-by-step operational procedures.
+
+### Framework Development
+
+Framework development documentation lives in `docs/`:
+- **[WORKFLOWS.md](docs/WORKFLOWS.md)** - Operational procedures for using this framework
+- **[PLAN-framework.md](docs/PLAN-framework.md)** - Active planning for framework improvements
+
+These are separate from the actual research output in `analysis/`, `claims/`, and `tracking/`.
 
 ---
 

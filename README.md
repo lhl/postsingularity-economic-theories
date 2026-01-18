@@ -88,8 +88,11 @@ All analysis follows a **three-stage process**:
 
 ```
 ├── AGENTS.md              # Framework methodology (also CLAUDE.md)
-├── WORKFLOWS.md           # Operational procedures
 ├── README.md              # This file
+│
+├── docs/                  # Framework development (NOT research)
+│   ├── WORKFLOWS.md       # Operational procedures
+│   └── PLAN-framework.md  # Development planning
 │
 ├── inbox/                 # Work tracking (symlinks)
 │   ├── to-catalog/
@@ -141,7 +144,7 @@ ln -s ../reference/[file] inbox/to-analyze/
 ```
 
 ### To analyze a source
-See [WORKFLOWS.md](WORKFLOWS.md) for step-by-step procedures.
+See [docs/WORKFLOWS.md](docs/WORKFLOWS.md) for step-by-step procedures.
 
 ### To query claims
 All claims are in `claims/registry.yaml` with:
@@ -168,7 +171,7 @@ This framework is actively evolving. Current status:
 - [ ] File reorganization (sources in legacy locations)
 - [ ] Automated cross-reference validation
 
-See [PLAN-framework.md](PLAN-framework.md) for development roadmap.
+See [docs/PLAN-framework.md](docs/PLAN-framework.md) for development roadmap.
 
 ---
 
