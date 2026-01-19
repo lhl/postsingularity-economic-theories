@@ -89,6 +89,24 @@ sources:
     domains: ["TECH", "LABOR", "GOV", "DIST", "TRANS"]
     status: "analyzed"
 
+  # OpenAI business model / unit economics
+  openai-value-intelligence:
+    type: "ARTICLE"
+    title: "A business that scales with the value of intelligence"
+    author: ["OpenAI"]
+    year: 0  # Publication date not captured yet (no-network environment)
+    url: "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/"
+    accessed: "2026-01-19"
+    reliability: 0.55
+    bias_notes: "Corporate strategy post; likely promotional framing; quantitative/unit-economics implications should be cross-checked against hardware specs and observed pricing"
+    claims_extracted:
+      - "RESOURCE-2026-004"
+      - "TECH-2026-013"
+    analysis_file: "analysis/sources/openai-value-intelligence.md"
+    topics: ["inference", "unit-economics", "pricing", "gpus", "energy", "margins"]
+    domains: ["TECH", "RESOURCE", "VALUE"]
+    status: "analyzed"
+
   hotz-2026-three-minutes:
     type: "BLOG"
     title: "You have three minutes to escape the perpetual underclass"
@@ -717,6 +735,6 @@ sources:
     status: "analyzed"
 
 # Statistics
-# Total sources: 34
+# Total sources: 35
 # By type: CONVO: 5, BLOG: 7, SOCIAL: 3, REPORT: 6, PAPER: 3, ARTICLE: 4, BOOK: 1, KNOWLEDGE: 3, DATA: 2
 # Last updated: 2026-01-19

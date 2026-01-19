@@ -8,9 +8,9 @@ counters:
   VALUE: 2
   DIST: 10
   GOV: 19
-  TECH: 12
+  TECH: 13
   SOCIAL: 3
-  RESOURCE: 3
+  RESOURCE: 4
   TRANS: 4
   META: 8
 
@@ -226,6 +226,24 @@ claims:
     version: 1
     last_updated: "2026-01-19"
 
+  TECH-2026-013:
+    text: "If OpenAI's effective revenue is ~($1.20 per IT kWh) for inference, then breakeven on H100/H200-class hardware likely requires unusually low accelerator prices, very high utilization, long depreciation, or higher realized revenue per kWh"
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    confidence: 0.60
+    source_ids: ["openai-value-intelligence"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["TECH-2026-007", "DIST-2026-001"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+    notes: "Back-of-envelope: at 0.7kW IT power, $1.20/kWh ≈ $0.84/GPU-hour; typical 3y depreciation implies capex alone can exceed this unless GPU effective price is low or utilization/depreciation is favorable"
+
   # === RESOURCE Domain ===
 
   RESOURCE-2026-001:
@@ -278,6 +296,24 @@ claims:
     part_of_chain: ""
     version: 1
     last_updated: "2026-01-18"
+
+  RESOURCE-2026-004:
+    text: "For H100/H200-class GPUs, accelerator capex amortization is commonly on the order of ~$1–$3 per IT kWh under plausible (price, utilization, depreciation) assumptions, often exceeding the direct electricity cost"
+    type: "[T]"
+    domain: "RESOURCE"
+    evidence_level: "E3"
+    confidence: 0.70
+    source_ids: ["openai-value-intelligence"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["DIST-2026-001"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+    notes: "Assumes 0.7kW IT power, PUE ~1.2, electricity ~$0.06/kWh, GPU price ~$20k-$40k, depreciation 3-5y, utilization 70-90%; excludes server/networking/facilities opex"
 
   # === LABOR Domain ===
 
@@ -1329,6 +1365,6 @@ chains:
     weakest_link: "DIST-2026-006 (inference centralization vs diffusion)"
 
 # Statistics
-# Total claims: 62
+# Total claims: 64
 # Total chains: 3
 # Last updated: 2026-01-19
