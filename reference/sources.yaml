@@ -157,6 +157,130 @@ sources:
     topics: ["genocide", "ubi", "coercion", "elite-coordination"]
     domains: ["GOV", "DIST"]
 
+  # AI coding agents / "vibe coding" discourse (Jan 2026)
+  ronacher-2026-agent-psychosis:
+    type: "BLOG"
+    title: "Agent Psychosis: Are We Going Insane?"
+    author: ["Armin Ronacher"]
+    year: 2026
+    url: "https://lucumr.pocoo.org/2026/1/18/agent-psychosis/"
+    accessed: "2026-01-19"
+    reliability: 0.75
+    bias_notes: "Maintainer/operator perspective; generally pro-AI but emphasizes negative externalities (review burden, parasocial/addictive dynamics); mixes anecdote with operational observations"
+    claims_extracted:
+      - "LABOR-2026-007"
+      - "LABOR-2026-008"
+      - "LABOR-2026-009"
+      - "SOCIAL-2026-001"
+      - "SOCIAL-2026-002"
+      - "TECH-2026-007"
+      - "GOV-2026-019"
+    analysis_file: "analysis/sources/ronacher-2026-agent-psychosis.md"
+    topics: ["coding-agents", "vibe-coding", "open-source", "maintainers", "slop", "parasocial", "token-costs"]
+    domains: ["TECH", "LABOR", "SOCIAL"]
+    status: "analyzed"
+
+  yegge-2026-welcome-gas-town:
+    type: "BLOG"
+    title: "Welcome to Gas Town"
+    author: ["Steve Yegge"]
+    year: 2026
+    url: "https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04?source=rss-c1ec701babb7------2"
+    accessed: "2026-01-19"
+    reliability: 0.55
+    bias_notes: "Author-built tool launch post; highly promotional tone; many claims are experiential/forecast; contains some checkable implementation details and explicit caveats"
+    claims_extracted:
+      - "LABOR-2026-008"
+      - "TECH-2026-007"
+    analysis_file: "analysis/syntheses/vibecoding-agent-psychosis-synthesis.md"
+    topics: ["coding-agents", "orchestration", "vibe-coding", "multi-agent", "devtools", "costs"]
+    domains: ["TECH", "LABOR", "TRANS"]
+    status: "analyzed"
+
+  yegge-2026-future-coding-agents:
+    type: "BLOG"
+    title: "The Future of Coding Agents"
+    author: ["Steve Yegge"]
+    year: 2026
+    url: "https://steve-yegge.medium.com/the-future-of-coding-agents-e9451a84207c?source=rss-c1ec701babb7------2"
+    accessed: "2026-01-19"
+    reliability: 0.55
+    bias_notes: "Forecasting essay from tool author; includes claims about firm-size dynamics and developer productivity that are not empirically grounded"
+    claims_extracted:
+      - "LABOR-2026-008"
+      - "LABOR-2026-009"
+      - "TECH-2026-007"
+      - "DIST-2026-008"
+    analysis_file: "analysis/syntheses/vibecoding-agent-psychosis-synthesis.md"
+    topics: ["coding-agents", "orchestration", "colonies", "developer-productivity", "firm-size", "merge-problem"]
+    domains: ["TECH", "LABOR", "TRANS", "DIST"]
+    status: "analyzed"
+
+  yegge-2026-gas-town-emergency-user-manual:
+    type: "BLOG"
+    title: "Gas Town Emergency User Manual"
+    author: ["Steve Yegge"]
+    year: 2026
+    url: "https://steve-yegge.medium.com/gas-town-emergency-user-manual-cf0e4556d74b?source=rss-c1ec701babb7------2"
+    accessed: "2026-01-19"
+    reliability: 0.55
+    bias_notes: "Operational guidance from tool author; contains quantitative claims (LOC, PRs) and workflow prescriptions; still promotional and anecdotal"
+    claims_extracted:
+      - "LABOR-2026-009"
+      - "SOCIAL-2026-001"
+    analysis_file: "analysis/syntheses/vibecoding-agent-psychosis-synthesis.md"
+    topics: ["coding-agents", "orchestration", "workflows", "maintainers", "slop", "reviews", "costs"]
+    domains: ["TECH", "LABOR"]
+    status: "analyzed"
+
+  yegge-2026-bags-creator-economy:
+    type: "BLOG"
+    title: "BAGS and the Creator Economy"
+    author: ["Steve Yegge"]
+    year: 2026
+    url: "https://steve-yegge.medium.com/bags-and-the-creator-economy-249b924a621a?source=rss-c1ec701babb7------2"
+    accessed: "2026-01-19"
+    reliability: 0.45
+    bias_notes: "Crypto/creator-economy advocacy mixed with personal anecdotes; direct financial interest disclosed; limited empirical grounding"
+    claims_extracted:
+      - "DIST-2026-008"
+    analysis_file: "analysis/syntheses/vibecoding-agent-psychosis-synthesis.md"
+    topics: ["creator-economy", "crypto", "bags", "funding", "vibe-coding", "software-production"]
+    domains: ["DIST", "LABOR", "TRANS", "TECH"]
+    status: "analyzed"
+
+  yegge-2025-beads:
+    type: "DATA"
+    title: "Beads (GitHub repository)"
+    author: ["Steve Yegge"]
+    year: 2025
+    url: "https://github.com/steveyegge/beads"
+    accessed: "2026-01-19"
+    reliability: 0.85
+    bias_notes: "Primary artifact (code + docs) for Beads; claims about usage/impact should be corroborated with external evidence"
+    claims_extracted:
+      - "TECH-2026-008"
+    analysis_file: "analysis/syntheses/vibecoding-agent-psychosis-synthesis.md"
+    topics: ["coding-agents", "issue-tracker", "git-backed", "agent-memory", "devtools"]
+    domains: ["TECH", "LABOR"]
+    status: "analyzed"
+
+  yegge-2025-gastown:
+    type: "DATA"
+    title: "Gas Town (GitHub repository)"
+    author: ["Steve Yegge"]
+    year: 2025
+    url: "https://github.com/steveyegge/gastown"
+    accessed: "2026-01-19"
+    reliability: 0.85
+    bias_notes: "Primary artifact (code + docs) for Gas Town; fast-moving repository; claims should be anchored to accessed date / commit"
+    claims_extracted:
+      - "TECH-2026-008"
+    analysis_file: "analysis/syntheses/vibecoding-agent-psychosis-synthesis.md"
+    topics: ["coding-agents", "orchestration", "multi-agent", "devtools"]
+    domains: ["TECH", "LABOR"]
+    status: "analyzed"
+
   # External sources cited in analysis (not directly analyzed, referenced for evidence)
   epoch-2024-training-costs:
     type: "REPORT"
@@ -488,6 +612,6 @@ sources:
     status: "analyzed"
 
 # Statistics
-# Total sources: 27
-# By type: CONVO: 5, BLOG: 2, SOCIAL: 3, REPORT: 6, PAPER: 3, ARTICLE: 4, BOOK: 1, KNOWLEDGE: 3
+# Total sources: 34
+# By type: CONVO: 5, BLOG: 7, SOCIAL: 3, REPORT: 6, PAPER: 3, ARTICLE: 4, BOOK: 1, KNOWLEDGE: 3, DATA: 2
 # Last updated: 2026-01-19

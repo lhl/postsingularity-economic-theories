@@ -19,6 +19,8 @@ The framework is itself under development—we refine it as we encounter new typ
 
 | Document | Status | Summary |
 |----------|--------|---------|
+| [Vibecoding / Agent Psychosis Synthesis](analysis/syntheses/vibecoding-agent-psychosis-synthesis.md) | `[DRAFT]` | Synthesis of maintainer “slop” externalities vs “code factory” workflows; argues verification becomes the bottleneck as artifact generation gets cheap |
+| [Ronacher "Agent Psychosis" Post Analysis](analysis/sources/ronacher-2026-agent-psychosis.md) | `[REVIEWED]` | Maintainer-centric analysis of agentic-coding addiction/slop loops and review asymmetry; includes repo-size fact-check and governance adaptation hypotheses |
 | [Neofeudalism Discourse Synthesis](analysis/syntheses/neofeudalism-discourse-synthesis.md) | `[DRAFT]` | Synthesis of Jan 2026 Twitter discourse on post-labor economics, permanent underclass thesis, and counter-arguments |
 | [Greenland "Endgame" Post Analysis](analysis/sources/teortaxes-2026-greenland-endgame.md) | `[REVIEWED]` | 3-stage analysis with fact-check/rhetoric/tension checks; extracts GOV/RESOURCE/TRANS/LABOR claims |
 | [Doctorow "Reverse Centaur" Essay Analysis](analysis/sources/doctorow-2026-reverse-centaur.md) | `[REVIEWED]` | Incentive-based critique of AI bubble + “reverse centaur” deployments; extracts claims on monopoly dynamics, labor control, and bubble-bust prediction |
@@ -26,7 +28,7 @@ The framework is itself under development—we refine it as we encounter new typ
 
 ### Claims Registered
 
-**53 claims** across 8 domains, with **3 argument chains** mapped:
+**62 claims** across 8 domains, with **3 argument chains** mapped:
 
 | Chain | Thesis | Confidence |
 |-------|--------|------------|
@@ -136,6 +138,11 @@ All analysis follows a **three-stage process**:
 
 | Source | Author | Type | Reliability |
 |--------|--------|------|-------------|
+| [Agent Psychosis](https://lucumr.pocoo.org/2026/1/18/agent-psychosis/) | Armin Ronacher | Blog | 0.75 |
+| [Welcome to Gas Town](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04) | Steve Yegge | Blog | 0.55 |
+| [The Future of Coding Agents](https://steve-yegge.medium.com/the-future-of-coding-agents-e9451a84207c) | Steve Yegge | Blog | 0.55 |
+| [Gas Town Emergency User Manual](https://steve-yegge.medium.com/gas-town-emergency-user-manual-cf0e4556d74b) | Steve Yegge | Blog | 0.55 |
+| [BAGS and the Creator Economy](https://steve-yegge.medium.com/bags-and-the-creator-economy-249b924a621a) | Steve Yegge | Blog | 0.45 |
 | [Three Minutes to Escape](https://geohot.github.io/blog/jekyll/update/2026/01/17/three-minutes.html) | George Hotz | Blog | 0.5 |
 | [How Do I Stop?](https://geohot.github.io/blog/jekyll/update/2026/01/18/how-do-i-stop.html) | George Hotz | Blog | 0.5 |
 | Post-labor thread | @teortaxesTex | Social | 0.4 |
