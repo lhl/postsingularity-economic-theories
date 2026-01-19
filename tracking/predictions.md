@@ -13,13 +13,13 @@ See [AGENTS.md](../AGENTS.md#prediction-tracking-rubric) for status symbols and 
 | `[P+]` Confirmed | 0 | Prediction occurred as specified |
 | `[P~]` Partially Confirmed | 0 | Core thesis correct, details differ |
 | `[P→]` On Track | 1 | Intermediate indicators align |
-| `[P?]` Uncertain | 4 | Insufficient data |
+| `[P?]` Uncertain | 6 | Insufficient data |
 | `[P←]` Off Track | 0 | Intermediate indicators diverge |
 | `[P!]` Partially Refuted | 0 | Core thesis problematic |
 | `[P-]` Refuted | 0 | Prediction clearly failed |
 | `[P∅]` Unfalsifiable | 0 | No possible evidence could refute |
 
-**Total Predictions Tracked**: 5
+**Total Predictions Tracked**: 7
 
 ---
 
@@ -95,6 +95,21 @@ See [AGENTS.md](../AGENTS.md#prediction-tracking-rubric) for status symbols and 
 - **Evidence Updates**:
   - 2026-01-18: Initial registration. This is a conditional prediction dependent on LABOR-2026-002. Low confidence because it assumes no redistribution mechanism, which is a political choice not an economic necessity.
 
+#### “Creator Explosion” by Summer 2026
+- **Claim ID**: DIST-2026-010
+- **Source**: yegge-2026-bags-creator-economy
+- **Date Made**: 2026-01-15
+- **Target Date**: ~summer 2026 (claimed as “~2 frontier-model upgrades”)
+- **Claim**: Millions of independent creators appear once “everyone can vibe code,” forcing new discovery/market institutions for attention and funding
+- **Falsification Criteria**: By end of 2026, no clear step-change in independent creator output (software/services/content) attributable to agentic tooling; “millions” remains implausible by any reasonable metric
+- **Verification Criteria**: Clear, measured surge in independent creator output and viable microbusiness formation enabled by agentic tooling; major platforms/markets adapt explicitly to the long-tail influx
+- **Status**: `[P?]`
+- **Confidence**: 0.30
+- **Last Evaluated**: 2026-01-19
+- **Related Claims**: [DIST-2026-008, LABOR-2026-012]
+- **Evidence Updates**:
+  - 2026-01-19: Initial registration. Treated as a broad forecast with unclear operational definition of “millions” and attribution.
+
 ---
 
 ### VALUE - Value Theory & Pricing
@@ -128,6 +143,21 @@ Note: GOV-2026-002 ("Elites will choose genocide over UBI") is classified as `[S
 - **Evidence Updates**:
   - 2026-01-19: Initial registration. “Bubble” framing and timelines remain uncertain; treated as a broad forecast.
 
+#### Small Shops Outperform Large Firms (2026-2027)
+- **Claim ID**: TRANS-2026-004
+- **Source**: yegge-2026-future-coding-agents
+- **Date Made**: 2026-01-05
+- **Target Date**: 2026-2027 (claimed “~1+ year” window)
+- **Claim**: Small, fast shops dramatically outperform large companies for at least ~1 year because coordination/merge regimes lag behind agentic throughput
+- **Falsification Criteria**: By end of 2027, no observable period where small shops systematically outperform large firms on productivity proxies (e.g., revenue/employee, product iteration speed) attributable to agentic workflows; large firms adapt without significant disruption
+- **Verification Criteria**: Broad evidence of small-team competitive advantage (rapid product shipping, displacement of incumbents, org restructuring) with explicit linkage to agentic workflows and coordination bottlenecks in larger orgs
+- **Status**: `[P?]`
+- **Confidence**: 0.40
+- **Last Evaluated**: 2026-01-19
+- **Related Claims**: [LABOR-2026-010, TECH-2026-009]
+- **Evidence Updates**:
+  - 2026-01-19: Initial registration. Mechanism plausible; magnitude and measurement remain uncertain.
+
 ---
 
 ## Predictions by Source
@@ -138,6 +168,8 @@ Note: GOV-2026-002 ("Elites will choose genocide over UBI") is classified as `[S
 | teortaxes-2026-thread | 2 | 0.325 |
 | teortaxes-2026-greenland-endgame | 1 | 0.15 |
 | doctorow-2026-reverse-centaur | 1 | 0.35 |
+| yegge-2026-bags-creator-economy | 1 | 0.30 |
+| yegge-2026-future-coding-agents | 1 | 0.40 |
 
 ---
 
@@ -150,6 +182,8 @@ Note: GOV-2026-002 ("Elites will choose genocide over UBI") is classified as `[S
 | 2026-01-18 | DIST-2026-003 | - | `[P?]` | Initial registration |
 | 2026-01-19 | LABOR-2026-004 | - | `[P?]` | Initial registration |
 | 2026-01-19 | TRANS-2026-003 | - | `[P?]` | Initial registration |
+| 2026-01-19 | DIST-2026-010 | - | `[P?]` | Initial registration |
+| 2026-01-19 | TRANS-2026-004 | - | `[P?]` | Initial registration |
 
 ---
 
@@ -160,7 +194,9 @@ Events that should trigger re-evaluation of predictions:
 - [ ] Major lab announces training run budget (for TECH-2026-002)
 - [ ] Significant automation deployment news (for LABOR-2026-002, LABOR-2026-004)
 - [ ] Major UBI/redistribution policy announcements (for DIST-2026-003)
+- [ ] Platform/market shifts showing creator long-tail surge (for DIST-2026-010)
 - [ ] Major AI bankruptcies/shutdowns or capex contraction (for TRANS-2026-003)
+- [ ] Clear small-shop vs big-firm performance evidence tied to agentic workflows (for TRANS-2026-004)
 - [ ] Quarterly review: 2026-Q2
 
 ---

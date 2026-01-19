@@ -157,7 +157,7 @@ sources:
     topics: ["genocide", "ubi", "coercion", "elite-coordination"]
     domains: ["GOV", "DIST"]
 
-  # AI coding agents / "vibe coding" discourse (Jan 2026)
+  # AI coding agents / "vibe coding" discourse (Oct 2025 - Jan 2026)
   ronacher-2026-agent-psychosis:
     type: "BLOG"
     title: "Agent Psychosis: Are We Going Insane?"
@@ -192,7 +192,9 @@ sources:
     claims_extracted:
       - "LABOR-2026-008"
       - "TECH-2026-007"
-    analysis_file: "analysis/syntheses/vibecoding-agent-psychosis-synthesis.md"
+      - "TECH-2026-009"
+      - "TECH-2026-012"
+    analysis_file: "analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md"
     topics: ["coding-agents", "orchestration", "vibe-coding", "multi-agent", "devtools", "costs"]
     domains: ["TECH", "LABOR", "TRANS"]
     status: "analyzed"
@@ -209,9 +211,12 @@ sources:
     claims_extracted:
       - "LABOR-2026-008"
       - "LABOR-2026-009"
+      - "LABOR-2026-010"
       - "TECH-2026-007"
+      - "TECH-2026-009"
       - "DIST-2026-008"
-    analysis_file: "analysis/syntheses/vibecoding-agent-psychosis-synthesis.md"
+      - "TRANS-2026-004"
+    analysis_file: "analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md"
     topics: ["coding-agents", "orchestration", "colonies", "developer-productivity", "firm-size", "merge-problem"]
     domains: ["TECH", "LABOR", "TRANS", "DIST"]
     status: "analyzed"
@@ -227,8 +232,9 @@ sources:
     bias_notes: "Operational guidance from tool author; contains quantitative claims (LOC, PRs) and workflow prescriptions; still promotional and anecdotal"
     claims_extracted:
       - "LABOR-2026-009"
+      - "LABOR-2026-010"
       - "SOCIAL-2026-001"
-    analysis_file: "analysis/syntheses/vibecoding-agent-psychosis-synthesis.md"
+    analysis_file: "analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md"
     topics: ["coding-agents", "orchestration", "workflows", "maintainers", "slop", "reviews", "costs"]
     domains: ["TECH", "LABOR"]
     status: "analyzed"
@@ -244,9 +250,106 @@ sources:
     bias_notes: "Crypto/creator-economy advocacy mixed with personal anecdotes; direct financial interest disclosed; limited empirical grounding"
     claims_extracted:
       - "DIST-2026-008"
-    analysis_file: "analysis/syntheses/vibecoding-agent-psychosis-synthesis.md"
+      - "DIST-2026-010"
+    analysis_file: "analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md"
     topics: ["creator-economy", "crypto", "bags", "funding", "vibe-coding", "software-production"]
     domains: ["DIST", "LABOR", "TRANS", "TECH"]
+    status: "analyzed"
+
+  yegge-2026-steveys-birthday-blog:
+    type: "BLOG"
+    title: "Stevey’s Birthday Blog"
+    author: ["Steve Yegge"]
+    year: 2026
+    url: "https://steve-yegge.medium.com/steveys-birthday-blog-34f437139cb5?source=rss-c1ec701babb7------2"
+    accessed: "2026-01-19"
+    reliability: 0.45
+    bias_notes: "Personal update post with embedded claims about AI dev workflows and incentives; anecdotal and perspective-driven"
+    claims_extracted:
+      - "SOCIAL-2026-003"
+    analysis_file: "analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md"
+    topics: ["vibe-coding", "coding-agents", "incentives", "vc", "workflow", "attention"]
+    domains: ["LABOR", "TECH", "SOCIAL", "TRANS"]
+    status: "analyzed"
+
+  yegge-2025-six-new-tips-coding-agents:
+    type: "BLOG"
+    title: "Six New Tips for Better Coding With Agents"
+    author: ["Steve Yegge"]
+    year: 2025
+    url: "https://steve-yegge.medium.com/six-new-tips-for-better-coding-with-agents-d4e9c86e42a9?source=rss-c1ec701babb7------2"
+    accessed: "2026-01-19"
+    reliability: 0.55
+    bias_notes: "Practice-oriented guidance and forecasts from an agentic-devtool author; mixes operational observations with extrapolation"
+    claims_extracted:
+      - "LABOR-2026-011"
+      - "DIST-2026-009"
+    analysis_file: "analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md"
+    topics: ["coding-agents", "vibe-coding", "workflow", "rewrite", "saas", "productivity"]
+    domains: ["LABOR", "TECH", "TRANS", "DIST"]
+    status: "analyzed"
+
+  yegge-2025-beads-best-practices:
+    type: "BLOG"
+    title: "Beads Best Practices"
+    author: ["Steve Yegge"]
+    year: 2025
+    url: "https://steve-yegge.medium.com/beads-best-practices-2db636b9760c?source=rss-c1ec701babb7------2"
+    accessed: "2026-01-19"
+    reliability: 0.50
+    bias_notes: "Best-practices writeup from tool author; includes scale and adoption claims that should be independently verified"
+    claims_extracted: []
+    analysis_file: "analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md"
+    topics: ["beads", "coding-agents", "workflows", "multi-agent", "orchestration", "vibe-coding"]
+    domains: ["TECH", "LABOR", "TRANS"]
+    status: "analyzed"
+
+  yegge-2025-cheese-wars-rise-vibe-coder:
+    type: "BLOG"
+    title: "Cheese Wars: Rise of the Vibe Coder"
+    author: ["Steve Yegge"]
+    year: 2025
+    url: "https://steve-yegge.medium.com/cheese-wars-rise-of-the-vibe-coder-6839a6b15982?source=rss-c1ec701babb7------2"
+    accessed: "2026-01-19"
+    reliability: 0.45
+    bias_notes: "Rhetorical essay with broad claims about labor, skill diffusion, and the future of programming; limited empirical grounding"
+    claims_extracted:
+      - "LABOR-2026-012"
+    analysis_file: "analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md"
+    topics: ["vibe-coding", "labor", "everyone-codes", "software-work", "junior-devs", "monoliths"]
+    domains: ["LABOR", "TECH", "TRANS", "SOCIAL"]
+    status: "analyzed"
+
+  yegge-2025-beads-blows-up:
+    type: "BLOG"
+    title: "Beads Blows Up"
+    author: ["Steve Yegge"]
+    year: 2025
+    url: "https://steve-yegge.medium.com/beads-blows-up-a0a61bb889b4?source=rss-c1ec701babb7------2"
+    accessed: "2026-01-19"
+    reliability: 0.50
+    bias_notes: "Launch/update post for Beads with architecture notes and adoption anecdotes; contains jokes/hyperbole alongside checkable implementation details"
+    claims_extracted:
+      - "TECH-2026-011"
+    analysis_file: "analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md"
+    topics: ["beads", "coding-agents", "devtools", "workflow", "git", "sqlite"]
+    domains: ["TECH", "LABOR"]
+    status: "analyzed"
+
+  yegge-2025-zero-framework-cognition:
+    type: "BLOG"
+    title: "Zero Framework Cognition: A Way to Build Resilient AI Applications"
+    author: ["Steve Yegge"]
+    year: 2025
+    url: "https://steve-yegge.medium.com/zero-framework-cognition-a-way-to-build-resilient-ai-applications-56b090ed3e69?source=rss-c1ec701babb7------2"
+    accessed: "2026-01-19"
+    reliability: 0.60
+    bias_notes: "Concrete architectural proposal (ZFC) for AI-enabled apps; still anecdotal but includes specific design principles and examples"
+    claims_extracted:
+      - "TECH-2026-010"
+    analysis_file: "analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md"
+    topics: ["zfc", "ai-apps", "architecture", "guardrails", "determinism", "orchestration"]
+    domains: ["TECH", "GOV"]
     status: "analyzed"
 
   yegge-2025-beads:
@@ -260,7 +363,8 @@ sources:
     bias_notes: "Primary artifact (code + docs) for Beads; claims about usage/impact should be corroborated with external evidence"
     claims_extracted:
       - "TECH-2026-008"
-    analysis_file: "analysis/syntheses/vibecoding-agent-psychosis-synthesis.md"
+      - "TECH-2026-011"
+    analysis_file: "analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md"
     topics: ["coding-agents", "issue-tracker", "git-backed", "agent-memory", "devtools"]
     domains: ["TECH", "LABOR"]
     status: "analyzed"
@@ -276,7 +380,8 @@ sources:
     bias_notes: "Primary artifact (code + docs) for Gas Town; fast-moving repository; claims should be anchored to accessed date / commit"
     claims_extracted:
       - "TECH-2026-008"
-    analysis_file: "analysis/syntheses/vibecoding-agent-psychosis-synthesis.md"
+      - "TECH-2026-012"
+    analysis_file: "analysis/syntheses/yegge-2025-2026-vibe-coding-synthesis.md"
     topics: ["coding-agents", "orchestration", "multi-agent", "devtools"]
     domains: ["TECH", "LABOR"]
     status: "analyzed"

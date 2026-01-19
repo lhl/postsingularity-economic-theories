@@ -4,14 +4,14 @@
 
 # Counter tracking (for generating sequential IDs)
 counters:
-  LABOR: 9
+  LABOR: 12
   VALUE: 2
-  DIST: 8
+  DIST: 10
   GOV: 19
-  TECH: 8
-  SOCIAL: 2
+  TECH: 12
+  SOCIAL: 3
   RESOURCE: 3
-  TRANS: 3
+  TRANS: 4
   META: 8
 
 # Claims index
@@ -157,6 +157,74 @@ claims:
     version: 1
     last_updated: "2026-01-19"
     notes: "Counts exclude vendored code; measured from GitHub default branch snapshots on 2026-01-19"
+
+  TECH-2026-009:
+    text: "Coding-agent platforms will converge on an 'orchestrator API surface' (hooks for handoffs, status, queues, gates) as multi-agent workflows become the dominant form factor"
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    confidence: 0.55
+    source_ids: ["yegge-2026-future-coding-agents", "yegge-2026-welcome-gas-town"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["LABOR-2026-009", "LABOR-2026-010"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
+  TECH-2026-010:
+    text: "ZFC (Zero Framework Cognition) pattern: robust AI apps keep client logic thin/deterministic and delegate ambiguous decisions back to models, adding guardrails and observability"
+    type: "[T]"
+    domain: "TECH"
+    evidence_level: "E4"
+    confidence: 0.60
+    source_ids: ["yegge-2025-zero-framework-cognition"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
+  TECH-2026-011:
+    text: "Beads is a distributed, git-backed, dependency-aware issue/graph tracker for agents, storing tasks as JSONL with a local SQLite cache layer ('Git as DB')"
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    confidence: 0.80
+    source_ids: ["yegge-2025-beads", "yegge-2025-beads-blows-up"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["LABOR-2026-010"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
+  TECH-2026-012:
+    text: "Gas Town is a multi-agent workspace/orchestration system (mayor/rig/crew/polecats) intended to make ~20-30 parallel agents manageable via persistent state and tooling"
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    confidence: 0.55
+    source_ids: ["yegge-2025-gastown", "yegge-2026-welcome-gas-town"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["LABOR-2026-010", "LABOR-2026-009"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
 
   # === RESOURCE Domain ===
 
@@ -370,6 +438,57 @@ claims:
     version: 1
     last_updated: "2026-01-19"
 
+  LABOR-2026-010:
+    text: "As agentic throughput rises, coordination/merge becomes a binding constraint; teams respond with extreme coordination simplifications (e.g., 'one engineer per repo') and continuous broadcast norms"
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E4"
+    confidence: 0.55
+    source_ids: ["yegge-2026-future-coding-agents", "yegge-2026-gas-town-emergency-user-manual"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["TRANS-2026-004"]
+    contradicts: []
+    depends_on: ["LABOR-2026-009"]
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
+  LABOR-2026-011:
+    text: "In many contexts, 'rewrite' becomes cheaper than 'repair': tests and subsystems are treated as disposable and regenerated, shifting maintenance norms"
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E4"
+    confidence: 0.55
+    source_ids: ["yegge-2025-six-new-tips-coding-agents"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["DIST-2026-009"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
+  LABOR-2026-012:
+    text: "'Everyone codes' forecast: as agentic tooling diffuses, many non-engineering roles write or modify software, and 'vibe coding' becomes a default expectation for programming jobs"
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E4"
+    confidence: 0.45
+    source_ids: ["yegge-2025-cheese-wars-rise-vibe-coder"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["DIST-2026-010"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
   # === VALUE Domain ===
 
   VALUE-2026-001:
@@ -542,6 +661,40 @@ claims:
     supports: ["LABOR-2026-009"]
     contradicts: []
     depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
+  DIST-2026-009:
+    text: "As internal software becomes easier to rebuild, some SaaS categories face stronger build-vs-buy pressure; defensible vendors are those with deep accumulated infra/know-how that remains costly to recreate"
+    type: "[H]"
+    domain: "DIST"
+    evidence_level: "E4"
+    confidence: 0.55
+    source_ids: ["yegge-2025-six-new-tips-coding-agents"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: ["LABOR-2026-011"]
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
+  DIST-2026-010:
+    text: "'Creator explosion' forecast: millions of independent creators appear once 'everyone can vibe code' (claimed as a near-term function of ~2 frontier-model upgrades), forcing new discovery/market institutions"
+    type: "[P]"
+    domain: "DIST"
+    evidence_level: "E5"
+    confidence: 0.30
+    source_ids: ["yegge-2026-bags-creator-economy"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["DIST-2026-008"]
+    contradicts: []
+    depends_on: ["LABOR-2026-012"]
     modified_by: []
     part_of_chain: ""
     version: 1
@@ -915,6 +1068,23 @@ claims:
     version: 1
     last_updated: "2026-01-19"
 
+  SOCIAL-2026-003:
+    text: "High-scale agentic coding (dozens of agents) can be cognitively exhausting and may disrupt sleep patterns"
+    type: "[H]"
+    domain: "SOCIAL"
+    evidence_level: "E5"
+    confidence: 0.40
+    source_ids: ["yegge-2026-steveys-birthday-blog"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
   # === TRANS Domain ===
 
   TRANS-2026-001:
@@ -968,6 +1138,23 @@ claims:
     version: 1
     last_updated: "2026-01-19"
     notes: "Operationalization for tracking: treat as resolving by ~2030; source itself does not specify timeline"
+
+  TRANS-2026-004:
+    text: "Near-term industry transition: small, fast shops dramatically outperform large companies for ~1+ year as coordination regimes lag behind agentic throughput"
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    confidence: 0.40
+    source_ids: ["yegge-2026-future-coding-agents"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: ["LABOR-2026-010"]
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
 
   # === META Domain ===
 
