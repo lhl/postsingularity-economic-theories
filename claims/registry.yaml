@@ -4,14 +4,14 @@
 
 # Counter tracking (for generating sequential IDs)
 counters:
-  LABOR: 4
+  LABOR: 6
   VALUE: 2
-  DIST: 6
-  GOV: 15
-  TECH: 4
+  DIST: 7
+  GOV: 18
+  TECH: 6
   SOCIAL: 0
   RESOURCE: 3
-  TRANS: 2
+  TRANS: 3
   META: 8
 
 # Claims index
@@ -87,6 +87,41 @@ claims:
     version: 2
     last_updated: "2026-01-18"
     notes: "Contradicts @teortaxesTex thesis that only billionaires will afford AI cognition"
+
+  TECH-2026-005:
+    text: "LLM-based code generation can produce plausible but wrong outputs (including invented dependency names), shifting risk to reviewers and increasing supply-chain/security failure modes"
+    type: "[F]"
+    domain: "TECH"
+    evidence_level: "E2"
+    confidence: 0.75
+    source_ids: ["doctorow-2026-reverse-centaur"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["LABOR-2026-006"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
+  TECH-2026-006:
+    text: "A key 'salvage' from the AI bubble is diffusion of useful low-cost tools (especially open-source models on commodity hardware) for tasks like transcription, summarization, image description, and simple graphic edits"
+    type: "[H]"
+    domain: "TECH"
+    evidence_level: "E4"
+    confidence: 0.60
+    source_ids: ["doctorow-2026-reverse-centaur"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["DIST-2026-004", "DIST-2026-005"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+    notes: "Conditional: stronger if open models remain deployable on commodity hardware post-shakeout"
 
   # === RESOURCE Domain ===
 
@@ -213,6 +248,41 @@ claims:
     version: 1
     last_updated: "2026-01-19"
     notes: "Rhetorically emphatic; timelines undefined; treated as low-confidence prediction"
+
+  LABOR-2026-005:
+    text: "Workplace AI is often deployed to intensify surveillance/control of workers (creating 'reverse centaurs'), rather than to augment worker autonomy"
+    type: "[T]"
+    domain: "LABOR"
+    evidence_level: "E4"
+    confidence: 0.55
+    source_ids: ["doctorow-2026-reverse-centaur"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
+  LABOR-2026-006:
+    text: "For most high-wage jobs, 'AI can do your job' is false as an end-to-end replacement claim; attempted substitution pushes humans into accountability-sink roles and can degrade quality"
+    type: "[H]"
+    domain: "LABOR"
+    evidence_level: "E4"
+    confidence: 0.50
+    source_ids: ["doctorow-2026-reverse-centaur"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+    notes: "Primarily a near-term operational claim; does not preclude long-run task substitution"
 
   # === VALUE Domain ===
 
@@ -356,6 +426,23 @@ claims:
     version: 1
     last_updated: "2026-01-18"
     notes: "Key uncertainty: efficiency/edge inference vs hyperscaler vertical integration and grid constraints"
+
+  DIST-2026-007:
+    text: "Monopolistic tech firms with saturated markets repeatedly hype new 'bubble' narratives (crypto/NFTs/metaverse/AI) to preserve growth-stock valuations when organic growth slows"
+    type: "[T]"
+    domain: "DIST"
+    evidence_level: "E4"
+    confidence: 0.45
+    source_ids: ["doctorow-2026-reverse-centaur"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["TRANS-2026-003"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
 
   # === GOV Domain ===
 
@@ -620,6 +707,58 @@ claims:
     version: 1
     last_updated: "2026-01-18"
 
+  GOV-2026-016:
+    text: "Google has ~90% search market share (global, depending on metric/timeframe), consistent with near-monopoly conditions"
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    confidence: 0.90
+    source_ids: ["doctorow-2026-reverse-centaur"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["DIST-2026-007"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
+  GOV-2026-017:
+    text: "Google pays Apple on the order of ~$20bn/year for default search placement (Safari/iOS), reinforcing distribution control and monopoly dynamics"
+    type: "[F]"
+    domain: "GOV"
+    evidence_level: "E2"
+    confidence: 0.85
+    source_ids: ["doctorow-2026-reverse-centaur"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: ["DIST-2026-007"]
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+
+  GOV-2026-018:
+    text: "Expanding copyright to restrict model training would primarily benefit incumbent media/platform monopolies; creator-friendly leverage is labor-market power (e.g., sectoral bargaining)"
+    type: "[H]"
+    domain: "GOV"
+    evidence_level: "E4"
+    confidence: 0.40
+    source_ids: ["doctorow-2026-reverse-centaur"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+    notes: "Institution-dependent: hinges on market concentration and bargaining structures in creative industries"
+
   # === TRANS Domain ===
 
   TRANS-2026-001:
@@ -655,6 +794,24 @@ claims:
     part_of_chain: ""
     version: 1
     last_updated: "2026-01-18"
+
+  TRANS-2026-003:
+    text: "The current generative-AI investment boom is a bubble that will burst, leading to widespread company failures and datacenter shutdowns/sell-offs; aftermath leaves salvage plus long cleanup"
+    type: "[P]"
+    domain: "TRANS"
+    evidence_level: "E5"
+    confidence: 0.35
+    source_ids: ["doctorow-2026-reverse-centaur"]
+    first_extracted: "2026-01-19"
+    extracted_by: "gpt-5.2"
+    supports: []
+    contradicts: []
+    depends_on: []
+    modified_by: []
+    part_of_chain: ""
+    version: 1
+    last_updated: "2026-01-19"
+    notes: "Operationalization for tracking: treat as resolving by ~2030; source itself does not specify timeline"
 
   # === META Domain ===
 
@@ -829,6 +986,6 @@ chains:
     weakest_link: "DIST-2026-006 (inference centralization vs diffusion)"
 
 # Statistics
-# Total claims: 44
+# Total claims: 53
 # Total chains: 3
 # Last updated: 2026-01-19

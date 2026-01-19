@@ -65,6 +65,30 @@ sources:
     domains: ["LABOR", "DIST", "SOCIAL"]
 
   # Primary sources referenced in conversations
+  doctorow-2026-reverse-centaur:
+    type: "ARTICLE"
+    title: "AI companies will fail. We can salvage something from the wreckage"
+    author: ["Cory Doctorow"]
+    year: 2026
+    url: "https://www.theguardian.com/us-news/ng-interactive/2026/jan/18/tech-ai-bubble-burst-reverse-centaur"
+    accessed: "2026-01-19"
+    reliability: 0.6
+    bias_notes: "Opinion essay; anti-monopoly/pro-labor framing; includes factual assertions that should be verified separately"
+    claims_extracted:
+      - "LABOR-2026-005"
+      - "LABOR-2026-006"
+      - "TECH-2026-005"
+      - "TECH-2026-006"
+      - "DIST-2026-007"
+      - "GOV-2026-016"
+      - "GOV-2026-017"
+      - "GOV-2026-018"
+      - "TRANS-2026-003"
+    analysis_file: "analysis/sources/doctorow-2026-reverse-centaur.md"
+    topics: ["ai", "bubble", "monopoly", "reverse-centaur", "labor", "open-source"]
+    domains: ["TECH", "LABOR", "GOV", "DIST", "TRANS"]
+    status: "analyzed"
+
   hotz-2026-three-minutes:
     type: "BLOG"
     title: "You have three minutes to escape the perpetual underclass"
@@ -464,6 +488,6 @@ sources:
     status: "analyzed"
 
 # Statistics
-# Total sources: 26
-# By type: CONVO: 5, BLOG: 2, SOCIAL: 3, REPORT: 6, PAPER: 3, ARTICLE: 3, BOOK: 1, KNOWLEDGE: 3
+# Total sources: 27
+# By type: CONVO: 5, BLOG: 2, SOCIAL: 3, REPORT: 6, PAPER: 3, ARTICLE: 4, BOOK: 1, KNOWLEDGE: 3
 # Last updated: 2026-01-19

@@ -13,13 +13,13 @@ See [AGENTS.md](../AGENTS.md#prediction-tracking-rubric) for status symbols and 
 | `[P+]` Confirmed | 0 | Prediction occurred as specified |
 | `[P~]` Partially Confirmed | 0 | Core thesis correct, details differ |
 | `[P→]` On Track | 1 | Intermediate indicators align |
-| `[P?]` Uncertain | 3 | Insufficient data |
+| `[P?]` Uncertain | 4 | Insufficient data |
 | `[P←]` Off Track | 0 | Intermediate indicators diverge |
 | `[P!]` Partially Refuted | 0 | Core thesis problematic |
 | `[P-]` Refuted | 0 | Prediction clearly failed |
 | `[P∅]` Unfalsifiable | 0 | No possible evidence could refute |
 
-**Total Predictions Tracked**: 4
+**Total Predictions Tracked**: 5
 
 ---
 
@@ -113,7 +113,20 @@ Note: GOV-2026-002 ("Elites will choose genocide over UBI") is classified as `[S
 
 ### TRANS - Transition Dynamics
 
-*No predictions registered yet*
+#### AI Bubble Bursts With Broad Failures by ~2030
+- **Claim ID**: TRANS-2026-003
+- **Source**: doctorow-2026-reverse-centaur
+- **Date Made**: 2026-01-18
+- **Target Date**: ~2030 (operationalization; source does not specify)
+- **Claim**: The current generative-AI investment boom is a bubble that will burst, leading to widespread company failures and datacenter shutdowns/sell-offs; aftermath leaves salvage plus long cleanup
+- **Falsification Criteria**: By 2030, the sector remains broadly capital-sustained/profitable with limited failure/shuttering; no clear deflation/shakeout occurs
+- **Verification Criteria**: Wave of failures/fire-sale acquisitions; major datacenter buildouts halted or sold off at steep discounts; credible reporting frames it as a bust vs normal consolidation
+- **Status**: `[P?]`
+- **Confidence**: 0.35
+- **Last Evaluated**: 2026-01-19
+- **Related Claims**: [DIST-2026-007, TECH-2026-006]
+- **Evidence Updates**:
+  - 2026-01-19: Initial registration. “Bubble” framing and timelines remain uncertain; treated as a broad forecast.
 
 ---
 
@@ -124,6 +137,7 @@ Note: GOV-2026-002 ("Elites will choose genocide over UBI") is classified as `[S
 | epoch-2024-training-costs | 1 | 0.65 |
 | teortaxes-2026-thread | 2 | 0.325 |
 | teortaxes-2026-greenland-endgame | 1 | 0.15 |
+| doctorow-2026-reverse-centaur | 1 | 0.35 |
 
 ---
 
@@ -135,6 +149,7 @@ Note: GOV-2026-002 ("Elites will choose genocide over UBI") is classified as `[S
 | 2026-01-18 | LABOR-2026-002 | - | `[P?]` | Initial registration |
 | 2026-01-18 | DIST-2026-003 | - | `[P?]` | Initial registration |
 | 2026-01-19 | LABOR-2026-004 | - | `[P?]` | Initial registration |
+| 2026-01-19 | TRANS-2026-003 | - | `[P?]` | Initial registration |
 
 ---
 
@@ -145,6 +160,7 @@ Events that should trigger re-evaluation of predictions:
 - [ ] Major lab announces training run budget (for TECH-2026-002)
 - [ ] Significant automation deployment news (for LABOR-2026-002, LABOR-2026-004)
 - [ ] Major UBI/redistribution policy announcements (for DIST-2026-003)
+- [ ] Major AI bankruptcies/shutdowns or capex contraction (for TRANS-2026-003)
 - [ ] Quarterly review: 2026-Q2
 
 ---

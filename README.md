@@ -21,11 +21,12 @@ The framework is itself under development—we refine it as we encounter new typ
 |----------|--------|---------|
 | [Neofeudalism Discourse Synthesis](analysis/syntheses/neofeudalism-discourse-synthesis.md) | `[DRAFT]` | Synthesis of Jan 2026 Twitter discourse on post-labor economics, permanent underclass thesis, and counter-arguments |
 | [Greenland "Endgame" Post Analysis](analysis/sources/teortaxes-2026-greenland-endgame.md) | `[REVIEWED]` | 3-stage analysis with fact-check/rhetoric/tension checks; extracts GOV/RESOURCE/TRANS/LABOR claims |
+| [Doctorow "Reverse Centaur" Essay Analysis](analysis/sources/doctorow-2026-reverse-centaur.md) | `[REVIEWED]` | Incentive-based critique of AI bubble + “reverse centaur” deployments; extracts claims on monopoly dynamics, labor control, and bubble-bust prediction |
 | [Framework Efficacy Meta-Analysis](analysis/meta/framework-efficacy-greenland-test.md) | `[REVIEWED]` | Compares framework-guided vs raw analysis; identifies framework gaps (fact-checking, rhetoric, internal tensions); proposes template improvements |
 
 ### Claims Registered
 
-**44 claims** across 8 domains, with **3 argument chains** mapped:
+**53 claims** across 8 domains, with **3 argument chains** mapped:
 
 | Chain | Thesis | Confidence |
 |-------|--------|------------|
@@ -140,6 +141,7 @@ All analysis follows a **three-stage process**:
 | Post-labor thread | @teortaxesTex | Social | 0.4 |
 | [Greenland endgame post](https://x.com/teortaxesTex/status/2012127205728440495) | @teortaxesTex | Social | 0.3 |
 | Genocide > UBI thread | @Xenoimpulse | Social | 0.3 |
+| [AI bubble + reverse centaur essay](https://www.theguardian.com/us-news/ng-interactive/2026/jan/18/tech-ai-bubble-burst-reverse-centaur) | Cory Doctorow | Article | 0.6 |
 | [Training Costs Report](https://epoch.ai/blog/how-much-does-it-cost-to-train-frontier-ai-models) | Epoch AI | Report | 0.8 |
 | [Energy and AI](https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai) | IEA | Report | 0.85 |
 
