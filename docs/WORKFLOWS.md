@@ -17,6 +17,7 @@
 | Check/update prediction status | [6. Prediction Evaluation](#6-prediction-evaluation) |
 | Combine multiple sources into synthesis | [7. Synthesis Creation](#7-synthesis-creation) |
 | Something changed, need to re-analyze | [8. Re-Analysis Trigger](#8-re-analysis-trigger) |
+| Improve the framework itself | [9. Framework Improvement](#9-framework-improvement) |
 
 ---
 
@@ -398,6 +399,163 @@ ln -s ../../reference/primary/[author]-[year]-[shorttitle].pdf .
    git commit -m "refactor: re-analyze [source-id] due to [trigger]"
    git push
    ```
+
+---
+
+## 9. Framework Improvement
+
+**When**: The framework itself needs updating—new template sections, workflow changes, methodology refinements.
+
+### Triggers
+
+- External feedback (e.g., GPT/Claude review of outputs)
+- Meta-analysis reveals gaps (comparing framework vs raw analysis)
+- Repeated friction in existing workflows
+- New source types require new handling
+- Validation script needs enhancement
+
+### Determine Scope
+
+| Scope | Criteria | Approach |
+|-------|----------|----------|
+| **Minor** | Single field addition, typo fix, clarification | Direct edit → commit |
+| **Major** | New template sections, workflow changes, multiple files | IMPLEMENTATION doc |
+| **Meta-analysis** | Testing framework efficacy | Create `analysis/meta/` doc first |
+
+### Path A: Minor Fixes
+
+1. **Edit directly** in CLAUDE.md/AGENTS.md or WORKFLOWS.md
+2. **Run validation**: `python scripts/validate.py`
+3. **Commit**:
+   ```bash
+   git add [files]
+   git commit -m "docs: [describe fix]"
+   git push
+   ```
+
+### Path B: Major Changes (IMPLEMENTATION doc)
+
+1. **Create implementation doc**:
+   ```bash
+   touch docs/IMPLEMENTATION-[change-name].md
+   ```
+
+2. **Document the change** using this structure:
+   ```markdown
+   # Implementation: [Change Name]
+
+   > **Sprint**: [YYYY-MM-DD]
+   > **Triggered by**: [What prompted this?]
+   > **Status**: In Progress
+
+   ## Summary
+   [What's changing and why]
+
+   ## Punchlist
+   - [ ] Item 1
+   - [ ] Item 2
+
+   ## Worklog
+   | Time | Action | Status |
+   |------|--------|--------|
+
+   ## Template Diffs
+   [Show before/after for template changes]
+
+   ## Success Criteria
+   - [ ] Criterion 1
+   - [ ] Criterion 2
+   ```
+
+3. **Work through punchlist**, updating worklog as items complete
+
+4. **Update CLAUDE.md/AGENTS.md** with new template sections
+
+5. **Update WORKFLOWS.md** if procedures changed
+
+6. **Run validation and commit**:
+   ```bash
+   python scripts/validate.py
+   git add docs/IMPLEMENTATION-[name].md AGENTS.md docs/WORKFLOWS.md
+   git commit -m "feat: implement [change-name]"
+   git push
+   ```
+
+7. **Mark implementation doc as complete** (Status: Complete, check success criteria)
+
+### Path C: Meta-Analysis (Framework Testing)
+
+Use this when you want to test whether the framework is working well.
+
+1. **Select a source** analyzed both with and without framework (or analyze same source twice)
+
+2. **Create meta-analysis doc**:
+   ```bash
+   touch analysis/meta/[topic]-[test-type].md
+   ```
+
+3. **Compare outputs** systematically:
+   - What did framework catch that raw missed?
+   - What did raw catch that framework missed?
+   - Where do confidence levels diverge?
+
+4. **Extract META claims** about framework efficacy:
+   - Assign IDs: `META-[YYYY]-[NNN]`
+   - Add to `claims/registry.yaml`
+
+5. **Identify gaps** → feeds into Path B if significant
+
+6. **Update sources.yaml** with meta-analysis source entry
+
+7. **Commit**:
+   ```bash
+   git add analysis/meta/[file] claims/registry.yaml reference/sources.yaml
+   git commit -m "feat: meta-analysis [topic]"
+   git push
+   ```
+
+### Path D: External Feedback Integration
+
+When someone (human or AI) reviews framework outputs and provides feedback:
+
+1. **Capture feedback** in a transcript or note
+   - Add to `reference/transcripts/` if substantive
+
+2. **Triage feedback items**:
+   - Actionable vs nice-to-have
+   - Minor fix vs major change
+
+3. **For actionable items**:
+   - Minor → Path A
+   - Major → Path B (include verbatim feedback in IMPLEMENTATION doc)
+
+4. **Register as source** if feedback is substantive:
+   ```yaml
+   [reviewer]-[date]-[topic]:
+     type: "CONVO"
+     # ... standard fields
+   ```
+
+### Examples
+
+**Minor fix**: "Add a column to the claims table"
+→ Direct edit to CLAUDE.md, commit
+
+**Major change**: "Add fact-checking, rhetoric analysis, and internal tensions sections"
+→ Create `IMPLEMENTATION-gap-analysis-improvement.md`, work through punchlist
+
+**Meta-analysis**: "Compare framework output to raw GPT analysis of same source"
+→ Create `analysis/meta/framework-efficacy-[source].md`, extract META claims
+
+**External feedback**: "GPT 5.2 Pro suggests 4 robustness fixes"
+→ Create `IMPLEMENTATION-robustness-fixes.md` with verbatim feedback, implement
+
+### Output
+
+- Updated CLAUDE.md/AGENTS.md (templates, methodology)
+- Updated WORKFLOWS.md (procedures)
+- IMPLEMENTATION doc (for major changes)
+- META claims in registry (for meta-analyses)
 
 ---
 
