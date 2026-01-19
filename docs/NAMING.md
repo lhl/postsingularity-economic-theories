@@ -63,6 +63,12 @@ Gauge, Plumb, Level, Caliper, Compass, Sextant, Yardstick
 ### “Cleaner thinking” without sanctimony
 Clearhead, Lucid, Crisp, Brightline, Untangle, Unknot, Threadpull
 
+### Remedy / antidote vibe (information “poisoning”)
+Tonic, Antidote, Detox, Charcoal, Salts, Litmus, Reality Check
+
+### RPG status-cure / potion vibe (playful “take as needed”)
+Remedy, Elixir, Potion, Esuna, Cleanse, Purify, Salve, Balm
+
 ## 4) Candidate Name List (Grouped)
 
 These are intentionally “too many”; we’ll shortlist later.
@@ -115,10 +121,31 @@ These are intentionally “too many”; we’ll shortlist later.
 - **Brightline** (already used in policy contexts)
 - **Unknot** (cute)
 
-## 5) First-Pass Shortlist (10)
+### F) Remedy / antidote vibe (information poisoning / “take as needed”)
+- **Tonic** (highly verbable; likely name collisions)
+- **Antidote** (direct; a bit serious)
+- **Detox** (very short; has “wellness detox” baggage)
+- **Charcoal** (activated charcoal vibe; “run it through Charcoal” works)
+- **Salts** (smelling salts vibe; snaps you awake)
+- **Litmus** (already implies “test”; very verbable)
+- **RealityCheck** (extremely clear; generic + slightly “overclaim” coded)
+- **SanityCheck** (idiomatic + verbable; watch mental-health vibes)
+
+### G) RPG status-cure / potion vibe (8-bit icon in your head)
+- **Remedy** (cures “all statuses”; very verbable; works for gamers + non-gamers)
+- **Elixir** (classic “full restore”; maybe slightly fantasy-coded but common)
+- **Potion** (ultra-generic, but ultra-clear; possible collisions)
+- **Esuna** (FF spell; fun sound; more niche)
+- **Cleanse** (common game verb; clear meaning)
+- **Purify** (similar to cleanse; a bit more moralizing vibe)
+- **Salve** (short; “salve it” verbs well)
+- **Balm** (soft, soothing; may undersell “rigor”)
+
+## 5) First-Pass Shortlist (14)
 
 Not final; just a starting point to react to.
 
+1. **Remedy**
 1. **Sift**
 2. **Aegis**
 3. **Buckler**
@@ -129,6 +156,10 @@ Not final; just a starting point to react to.
 8. **Lucid**
 9. **Visor**
 10. **Plumb**
+11. **Tonic**
+12. **RealityCheck**
+13. **Elixir**
+14. **Litmus**
 
 ## 6) Taglines (Optional)
 
@@ -151,4 +182,3 @@ If the name is abstract (e.g., “Sift”), a tagline can carry the meaning:
    - Obvious trademarks / major products
 4. Decide whether to split:
    - serious umbrella + playful CLI (or vice versa)
-
